@@ -10,9 +10,6 @@ body{
     background-color: #FEECE2;
     font-family: "Marko One", serif;
 }
-body::selection{
-    background-color: #b42b5288;
-}
 h1{
     font-size: 35px;
     font-family: "Montez", cursive;
