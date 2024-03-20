@@ -18,11 +18,11 @@ h1{
 }
 h4{
     display: inline;
+    font-size: 20px;
 }
 a{
     font-size: 16px;
     text-decoration: none;
-    display: inline;
     font-family: "Marko One", serif;
 }
 p{
@@ -66,7 +66,7 @@ header{
     bottom:300px;
     left: 100px;
     font-size: 70px;
-    padding: 10px 40px
+    width: 450px;
 }
 .presentacion{
     display: flex;
@@ -101,13 +101,13 @@ header{
     background-color: #FEECE2;
     padding: 5px;
     box-shadow: 0px 15px 15px #3c075395;
-    width: 85%;
+    width: 100%;
     align-content: center;
-    position: relative;
     left: 100px;
 }
 .galeria img{
-    width: 33%;
+    width: 30%;
+    margin: 15px;
 }
 .galeria h2{
     text-align: center;
@@ -590,13 +590,98 @@ footer{
 }
 /** media queries **/
 @media (max-width: 1024px){
-    .galeria{
-        width: 75%;
+    .fondo h1{
+        font-size: 45px;
+        width: 300px;
+        bottom: 200px;
+        left: 75px;
+    }
+    .presentacion img{
+        margin: 20px;
     }
     .galeria img{
-        width: 30%;
+        width: 28%;
     }
-    
+    .redesSociales h4{
+        font-size: 16px;
+        margin: 0px 15px
+    }
+}
+@media (max-width: 768px){
+    .encabezado h1{
+        font-size: 25px;
+    }
+    .encabezado li a{
+        font-size: 12px;
+    }
+    .fondo h1{
+        font-size: 35px;
+        width: 250px;
+        bottom: 150px;
+        left: 50px;
+    }
+    .bio h2{
+        font-size: 20px;
+    }
+    .bio p{
+        font-size: 10px;
+    }
+    .redesSociales h4{
+        font-size: 14px;
+        margin: 0px 15px
+    }
+    .redesSociales a{
+        margin: 0px 15px;
+    }
+}
+/**puse el max-width en 426 porque si lo ponía en 425 no me lo tomaba en esta medida sino en un pixel menos**/
+@media (max-width: 426px){
+    .encabezado{
+        padding: 0px 10px;
+        flex-direction: column;
+    }
+    .encabezado h1{
+        display: none;
+    }
+    .encabezado li a{
+        font-size: 8px;
+    }
+    .encabezado li{
+        padding: 0;
+    }
+    .fondo h1{
+        font-size: 25px;
+        width: 170px;
+        bottom: 100px;
+        left: 30px;
+    }
+    .presentacion{
+        flex-direction: column;
+    }
+    .presentacion img{
+        width: 50%;
+    }
+    .bio{
+        width: 90%;
+    }
+    .bio h2{
+        font-size: 15px;
+    }
+    .bio p{
+        font-size: 8px;
+    }
+    .galeria{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .galeria img{
+        width: 80%;
+        justify-self: center;
+    }
+    .redesSociales h4{
+        display: none;
+    }
 }
 
 
