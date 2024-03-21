@@ -590,6 +590,9 @@ footer{
 }
 /** media queries **/
 @media (max-width: 1024px){
+    p{
+        font-size: 12px;
+    }
     .fondo h1{
         font-size: 45px;
         width: 300px;
@@ -602,6 +605,9 @@ footer{
     .galeria img{
         width: 28%;
     }
+    .avatarQuienSoy img{
+        width: 150px;
+    }
     .redesSociales h4{
         font-size: 16px;
         margin: 0px 15px
@@ -610,6 +616,9 @@ footer{
 @media (max-width: 768px){
     .encabezado h1{
         font-size: 25px;
+    }
+    .encabezado li{
+        padding: 0;
     }
     .encabezado li a{
         font-size: 12px;
@@ -623,8 +632,17 @@ footer{
     .bio h2{
         font-size: 20px;
     }
-    .bio p{
+    p{
         font-size: 10px;
+    }
+    .avatarQuienSoy img{
+        width: 100px;
+    }
+    .descripcion h2{
+        font-size: 25px;
+    }
+    .trabajos h2{
+        font-size: 25px;
     }
     .redesSociales h4{
         font-size: 14px;
@@ -636,6 +654,9 @@ footer{
 }
 /**puse el max-width en 426 porque si lo ponía en 425 no me lo tomaba en esta medida sino en un pixel menos**/
 @media (max-width: 426px){
+    p{
+        font-size: 8px;
+    }
     .encabezado{
         padding: 0px 10px;
         flex-direction: column;
@@ -678,6 +699,39 @@ footer{
     .galeria img{
         width: 80%;
         justify-self: center;
+    }
+    .avatarQuienSoy img{
+        width: 200px;
+        position:relative;
+        left: 50px;
+    }
+    .descripcion{
+        width: 80%;
+    }
+    .descripcion h2{
+        font-size: 20px;
+    }
+    .trabajos{
+        width: 90%;
+    }
+    .trabajos h2{
+        font-size: 20px;
+    }
+    .seccionUno{
+        flex-direction: column;
+        width: 80%;
+        margin: 30px 40px;
+    }
+    .seccionDos h2{
+        font-size: 20px;
+    }
+    .certificaciones{
+        justify-content: space-around;
+    }
+    .maquillajeSocial{
+       width: 25%;
+       border-radius: 10px;
+       padding: 20px 7px;
     }
     .redesSociales h4{
         display: none;
