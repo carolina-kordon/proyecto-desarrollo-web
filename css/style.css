@@ -177,14 +177,14 @@ header{
     padding: 40px 15px;
     width: 15%;
     background-color: #98217688;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 15px;
     color: #982176;
 }
 .maquillajeArtistico{
     padding: 40px 15px;
     width: 15%;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 15px;
     color: #872341;
     background-color: #87234188;
@@ -192,7 +192,7 @@ header{
 .maquillajeEditorial{
     padding: 40px 15px;
     width: 15%;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 15px;
     color: #B42B51;
     background-color: #b42b5288;
@@ -200,7 +200,7 @@ header{
 .peinado{
     padding: 40px 15px;
     width: 15%;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 15px;
     color: #3C0753;
     background-color: #3c075388;
@@ -250,7 +250,7 @@ header{
     font-size: 12px;
 }
 .articulos{
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-template-areas: 
     "articuloUno articuloDos"
@@ -269,6 +269,7 @@ header{
 .articuloUno img{
     padding: 20px;
     border-radius: 12px;
+    width: 95%;
 }
 .articuloUno h3{
     color: #872341;
@@ -287,8 +288,7 @@ header{
     border: none;
     border-radius: 0px 0px 12px 12px;
     text-align: right;
-    position: relative;
-    top: 35px; 
+    margin-top: 35px;
 }
 .articuloDos{
     width: 70%;
@@ -302,6 +302,7 @@ header{
 .articuloDos img{
     padding: 20px;
     border-radius: 12px;
+    width: 95%;
 }
 .articuloDos h3{
     color: #872341;
@@ -333,6 +334,7 @@ header{
 .articuloTres img{
     padding: 20px;
     border-radius: 12px;
+    width: 95%;
 }
 .articuloTres h3{
     color: #3C0753;
@@ -365,6 +367,7 @@ header{
     padding: 20px;
     border-radius: 12px;
     justify-self: center;
+    width: 95%;
 }
 .articuloCuatro h3{
     color: #3C0753;
@@ -385,15 +388,19 @@ header{
     text-align: right;
 }
 .articuloUno button img{
+    width: 80px;
     border: none;
 }
 .articuloDos button img{
+    width: 80px;
     border: none;
 }
 .articuloTres button img{
+    width: 80px;
     border: none;
 }
 .articuloCuatro button img{
+    width: 80px;
     border: none;
 }
 .detalleCursos{
@@ -608,6 +615,21 @@ footer{
     .avatarQuienSoy img{
         width: 150px;
     }
+    .articuloUno button{
+        margin-top: 40px;
+    }
+    .articuloDos button{
+        margin-top: 35px;
+    }
+    .articuloTres button{
+        margin-top: 35px;
+    }
+    .articuloCuatro button{
+        margin-top: 47px;
+    }
+    .categorias h2{
+        font-size: 18px;
+    }
     .redesSociales h4{
         font-size: 16px;
         margin: 0px 15px
@@ -643,6 +665,33 @@ footer{
     }
     .trabajos h2{
         font-size: 25px;
+    }
+    .articuloUno h3{
+        font-size: 16px;
+    }
+    .articuloDos h3{
+        font-size: 16px;
+    }
+    .articuloTres h3{
+        font-size: 16px;
+    }
+    .articuloCuatro h3{
+        font-size: 16px;
+    }
+    .articuloUno button img{
+        width: 65px;
+    }
+    .articuloDos button img{
+        width: 65px;
+    }
+    .articuloTres button img{
+        width: 65px;
+    }
+    .articuloCuatro button img{
+        width: 65px;
+    }
+    .categorias h2{
+        font-size: 16px;
     }
     .redesSociales h4{
         font-size: 14px;
@@ -729,9 +778,19 @@ footer{
         justify-content: space-around;
     }
     .maquillajeSocial{
-       width: 25%;
-       border-radius: 10px;
-       padding: 20px 7px;
+        width: 20%;
+    }
+    .maquillajeArtistico{
+        width: 20%;
+     }
+     .maquillajeEditorial{
+        width: 20%;
+     }
+     .peinado{
+        width: 20%;
+     }
+     .categorias h2{
+        font-size: 16px;
     }
     .redesSociales h4{
         display: none;
