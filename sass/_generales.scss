@@ -22,6 +22,7 @@ a{
     font-size: 16px;
     text-decoration: none;
     font-family: "Marko One", serif;
+    color:  #FEECE2;
 }
 p{
     font-size: 14px;
@@ -35,30 +36,35 @@ li{
 header{
     background-color: #B42B51;
     width: 100%;
+    nav{
+        .encabezado{
+            color: #FEECE2;
+            padding: 35px;
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            ul{
+                display: flex;
+                flex-wrap: nowrap;
+                li a{
+                    color: #FEECE2;
+                }
+            }
+        }
+    }
 }
-.encabezado{
-    color: #FEECE2;
-    padding: 35px;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-}
-.encabezado ul{
-    display: flex;
-    flex-wrap: nowrap;
-}
-.encabezado li a{
-    color: #FEECE2;
-}
+
 /** estilos del footer **/
 footer{
     background-color: black;
     color: #FEECE2;
     padding: 15px;
-}
-.redesSociales h4{
-    margin: 0px 20px;
-}
-.redesSociales a{
-    margin: 0px 20px;
+    .redesSociales{ 
+        h4{
+            margin: 0px 20px;
+        }
+        a{
+            margin: 0px 20px;
+        }
+    }
 }

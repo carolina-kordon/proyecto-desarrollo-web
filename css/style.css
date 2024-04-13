@@ -24,7 +24,8 @@ h4 {
 a {
   font-size: 16px;
   text-decoration: none;
-  font-family: "Marko One", serif; }
+  font-family: "Marko One", serif;
+  color: #FEECE2; }
 
 p {
   font-size: 14px; }
@@ -38,96 +39,81 @@ li {
 header {
   background-color: #B42B51;
   width: 100%; }
-
-.encabezado {
-  color: #FEECE2;
-  padding: 35px;
-  text-align: center;
-  display: flex;
-  justify-content: space-evenly; }
-
-.encabezado ul {
-  display: flex;
-  flex-wrap: nowrap; }
-
-.encabezado li a {
-  color: #FEECE2; }
+  header nav .encabezado {
+    color: #FEECE2;
+    padding: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly; }
+    header nav .encabezado ul {
+      display: flex;
+      flex-wrap: nowrap; }
+      header nav .encabezado ul li a {
+        color: #FEECE2; }
 
 /** estilos del footer **/
 footer {
   background-color: black;
   color: #FEECE2;
   padding: 15px; }
-
-.redesSociales h4 {
-  margin: 0px 20px; }
-
-.redesSociales a {
-  margin: 0px 20px; }
+  footer .redesSociales h4 {
+    margin: 0px 20px; }
+  footer .redesSociales a {
+    margin: 0px 20px; }
 
 /*secciones*/
 /*index*/
 .home {
   width: 100%;
   background-color: #b42b5288; }
-
-.fondo img {
-  width: 100%; }
-
-.fondo h1 {
-  color: #982176;
-  position: relative;
-  bottom: 300px;
-  left: 100px;
-  font-size: 70px;
-  width: 450px; }
-
-.presentacion {
-  display: flex;
-  align-content: center;
-  width: 100%;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center; }
-
-.bio {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  padding: 10px 20px; }
-
-.presentacion img {
-  width: 30%;
-  margin: 30px; }
-
-.bio p {
-  text-align: justify;
-  color: #982176;
-  margin: 5px 15px; }
-
-.bio h2 {
-  padding: 5px 5px 15px 5px;
-  color: #3C0753;
-  font-size: 30px;
-  text-align: center; }
-
-.galeria {
-  background-color: #FEECE2;
-  padding: 5px;
-  box-shadow: 0px 15px 15px #3c075395;
-  width: 100%;
-  align-content: center;
-  left: 100px; }
-
-.galeria img {
-  width: 30%;
-  margin: 15px; }
-
-.galeria h2 {
-  text-align: center;
-  font-family: "Montez", cursive;
-  color: #872341;
-  font-size: 30px; }
+  .home .fondo img {
+    width: 100%; }
+  .home .fondo h1 {
+    color: #982176;
+    position: relative;
+    bottom: 300px;
+    left: 100px;
+    font-size: 70px;
+    width: 450px; }
+  .home .presentacion {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center; }
+    .home .presentacion img {
+      width: 30%;
+      margin: 30px; }
+  .home .bio {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px; }
+    .home .bio p {
+      text-align: justify;
+      color: #982176;
+      margin: 5px 15px; }
+    .home .bio h2 {
+      padding: 5px 5px 15px 5px;
+      color: #3C0753;
+      font-size: 30px;
+      text-align: center; }
+  .home .galeria {
+    background-color: #FEECE2;
+    padding: 5px;
+    box-shadow: 0px 15px 15px #3c075395;
+    width: 100%;
+    align-content: center;
+    left: 100px; }
+    .home .galeria img {
+      width: 30%;
+      margin: 15px; }
+    .home .galeria h2 {
+      text-align: center;
+      font-family: "Montez", cursive;
+      color: #872341;
+      font-size: 30px; }
 
 /**quien soy**/
 .seccionUno {
@@ -137,360 +123,333 @@ footer {
   display: flex;
   box-shadow: 16px 16px 16px #14031b9b;
   width: 95%; }
-
-.descripcion {
-  width: 35%;
-  text-align: right;
-  margin: 10px; }
-
-.descripcion h2 {
-  font-family: "Montez", cursive;
-  color: #872341;
-  font-size: 30px;
-  text-align: right;
-  margin-bottom: 15px;
-  padding-right: 5px;
-  text-shadow: 1px 1px 1px #feece27e; }
-
-.descripcion p {
-  color: #feece288;
-  padding: 5px;
-  text-align: justify; }
-
-.trabajos {
-  width: 50%;
-  text-align: right; }
-
-.trabajos h2 {
-  font-family: "Montez", cursive;
-  color: #872341;
-  font-size: 30px;
-  text-align: right;
-  margin-bottom: 15px;
-  padding-right: 30px;
-  text-shadow: 1px 1px 1px #feece27e; }
-
-.trabajos img {
-  width: 30%; }
+  .seccionUno .descripcion {
+    width: 35%;
+    text-align: right;
+    margin: 10px; }
+    .seccionUno .descripcion h2 {
+      font-family: "Montez", cursive;
+      color: #872341;
+      font-size: 30px;
+      text-align: right;
+      margin-bottom: 15px;
+      padding-right: 5px;
+      text-shadow: 1px 1px 1px #feece27e; }
+    .seccionUno .descripcion p {
+      color: #feece288;
+      padding: 5px;
+      text-align: justify; }
+  .seccionUno .trabajos {
+    width: 50%;
+    text-align: right; }
+    .seccionUno .trabajos h2 {
+      font-family: "Montez", cursive;
+      color: #872341;
+      font-size: 30px;
+      text-align: right;
+      margin-bottom: 15px;
+      padding-right: 30px;
+      text-shadow: 1px 1px 1px #feece27e; }
+    .seccionUno .trabajos img {
+      width: 30%; }
 
 .seccionDos {
   width: 100%; }
-
-.seccionDos h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-family: "Montez", cursive;
-  color: #872341;
-  font-size: 30px; }
-
-.certificaciones {
-  text-align: center;
-  display: flex;
-  justify-content: space-evenly; }
-
-.maquillajeSocial {
-  padding: 40px 15px;
-  width: 15%;
-  background-color: #98217688;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  color: #982176; }
-
-.maquillajeArtistico {
-  padding: 40px 15px;
-  width: 15%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  color: #872341;
-  background-color: #87234188; }
-
-.maquillajeEditorial {
-  padding: 40px 15px;
-  width: 15%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  color: #B42B51;
-  background-color: #b42b5288; }
-
-.peinado {
-  padding: 40px 15px;
-  width: 15%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  color: #3C0753;
-  background-color: #3c075388; }
+  .seccionDos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Montez", cursive;
+    color: #872341;
+    font-size: 30px; }
+  .seccionDos .certificaciones {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly; }
+    .seccionDos .certificaciones .maquillajeSocial {
+      padding: 40px 15px;
+      width: 15%;
+      background-color: #98217688;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      color: #982176; }
+    .seccionDos .certificaciones .maquillajeArtistico {
+      padding: 40px 15px;
+      width: 15%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      color: #872341;
+      background-color: #87234188; }
+    .seccionDos .certificaciones .maquillajeEditorial {
+      padding: 40px 15px;
+      width: 15%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      color: #B42B51;
+      background-color: #b42b5288; }
+    .seccionDos .certificaciones .peinado {
+      padding: 40px 15px;
+      width: 15%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      color: #3C0753;
+      background-color: #3c075388; }
 
 /**blog**/
 .blog {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 6fr; }
-
-.menu {
-  width: 100%;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center; }
-
-.busqueda input {
-  width: 100%;
-  height: 40px;
-  border: 2px solid #b42b5288;
-  border-radius: 20px;
-  margin-top: 25px;
-  background-color: #FEECE2; }
-
-.busqueda p {
-  color: #b42b5288;
-  margin-right: 15px;
-  font-size: 15px; }
-
-.categorias {
-  text-align: center;
-  padding: 20px;
-  width: 100%;
-  background-color: #3c075388;
-  border-radius: 10px;
-  margin-right: 15px; }
-
-.categorias h2 {
-  font-family: "Marko One", serif;
-  color: #FEECE2;
-  font-size: 24px;
-  border-bottom: 1px solid #3C0753;
-  padding-bottom: 10px;
-  margin: 5px; }
-
-.categorias ul li {
-  color: #feece288;
-  border-bottom: 1px solid #3C0753;
-  padding-bottom: 10px;
-  margin: 5px;
-  font-size: 12px; }
-
-.articulos {
-  width: 100%;
-  display: grid;
-  grid-template-areas: "articuloUno articuloDos" "articuloTres articuloCuatro";
-  justify-content: flex-start; }
-
-.articuloUno {
-  width: 70%;
-  background-color: #ff66663f;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  grid-area: articuloUno;
-  justify-self: center; }
-
-.articuloUno img {
-  padding: 20px;
-  border-radius: 12px;
-  width: 95%; }
-
-.articuloUno h3 {
-  color: #872341;
-  font-size: 20px;
-  margin: 10px;
-  text-align: left; }
-
-.articuloUno p {
-  margin: 10px;
-  color: #87234188;
-  padding-bottom: 15px; }
-
-.articuloUno button {
-  width: 100%;
-  background-color: #ff66663f;
-  border: none;
-  border-radius: 0px 0px 12px 12px;
-  text-align: right;
-  margin-top: 35px; }
-
-.articuloDos {
-  width: 70%;
-  background-color: #ff66663f;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  grid-area: articuloDos;
-  justify-self: center; }
-
-.articuloDos img {
-  padding: 20px;
-  border-radius: 12px;
-  width: 95%; }
-
-.articuloDos h3 {
-  color: #872341;
-  font-size: 20px;
-  margin: 10px;
-  text-align: left; }
-
-.articuloDos p {
-  margin: 10px;
-  color: #87234188;
-  padding-bottom: 15px; }
-
-.articuloDos button {
-  width: 100%;
-  background-color: #ff66663f;
-  border: none;
-  border-radius: 0px 0px 12px 12px;
-  text-align: right; }
-
-.articuloTres {
-  width: 70%;
-  background-color: #b42b5288;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  grid-area: articuloTres;
-  justify-self: center; }
-
-.articuloTres img {
-  padding: 20px;
-  border-radius: 12px;
-  width: 95%; }
-
-.articuloTres h3 {
-  color: #3C0753;
-  font-size: 20px;
-  margin: 10px;
-  text-align: left; }
-
-.articuloTres p {
-  margin: 10px;
-  color: #3c075388;
-  padding-bottom: 15px; }
-
-.articuloTres button {
-  width: 100%;
-  background-color: #b42b5288;
-  border: none;
-  border-radius: 0px 0px 12px 12px;
-  text-align: right; }
-
-.articuloCuatro {
-  width: 70%;
-  background-color: #b42b5288;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  grid-area: articuloCuatro;
-  justify-self: center; }
-
-.articuloCuatro img {
-  padding: 20px;
-  border-radius: 12px;
-  justify-self: center;
-  width: 95%; }
-
-.articuloCuatro h3 {
-  color: #3C0753;
-  font-size: 20px;
-  margin: 10px;
-  text-align: left; }
-
-.articuloCuatro p {
-  margin: 10px;
-  color: #3c075388;
-  padding-bottom: 15px; }
-
-.articuloCuatro button {
-  width: 100%;
-  background-color: #b42b5288;
-  border: none;
-  border-radius: 0px 0px 12px 12px;
-  text-align: right; }
-
-.articuloUno button img {
-  width: 80px;
-  border: none; }
-
-.articuloDos button img {
-  width: 80px;
-  border: none; }
-
-.articuloTres button img {
-  width: 80px;
-  border: none; }
-
-.articuloCuatro button img {
-  width: 80px;
-  border: none; }
+  .blog .menu {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; }
+    .blog .menu .busqueda input {
+      width: 100%;
+      height: 40px;
+      border: 2px solid #b42b5288;
+      border-radius: 20px;
+      margin-top: 25px;
+      background-color: #FEECE2; }
+    .blog .menu .busqueda p {
+      color: #b42b5288;
+      margin-right: 15px;
+      font-size: 15px; }
+    .blog .menu .categorias {
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+      background-color: #3c075388;
+      border-radius: 10px;
+      margin-right: 15px; }
+      .blog .menu .categorias h2 {
+        font-family: "Marko One", serif;
+        color: #FEECE2;
+        font-size: 24px;
+        border-bottom: 1px solid #3C0753;
+        padding-bottom: 10px;
+        margin: 5px; }
+      .blog .menu .categorias ul li {
+        color: #feece288;
+        border-bottom: 1px solid #3C0753;
+        padding-bottom: 10px;
+        margin: 5px;
+        font-size: 12px; }
+  .blog .articulos {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "articuloUno articuloDos" "articuloTres articuloCuatro";
+    justify-content: flex-start; }
+    .blog .articulos .articuloUno {
+      width: 70%;
+      background-color: #ff66663f;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      grid-area: articuloUno;
+      justify-self: center; }
+      .blog .articulos .articuloUno img {
+        padding: 20px;
+        border-radius: 12px;
+        width: 95%; }
+      .blog .articulos .articuloUno h3 {
+        color: #872341;
+        font-size: 20px;
+        margin: 10px;
+        text-align: left; }
+      .blog .articulos .articuloUno p {
+        margin: 10px;
+        color: #87234188;
+        padding-bottom: 15px; }
+      .blog .articulos .articuloUno button {
+        width: 100%;
+        background-color: #ff66663f;
+        border: none;
+        border-radius: 0px 0px 12px 12px;
+        text-align: right;
+        margin-top: 35px; }
+        .blog .articulos .articuloUno button img {
+          width: 80px;
+          border: none; }
+    .blog .articulos .articuloDos {
+      width: 70%;
+      background-color: #ff66663f;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      grid-area: articuloDos;
+      justify-self: center; }
+      .blog .articulos .articuloDos img {
+        padding: 20px;
+        border-radius: 12px;
+        width: 95%; }
+      .blog .articulos .articuloDos h3 {
+        color: #872341;
+        font-size: 20px;
+        margin: 10px;
+        text-align: left; }
+      .blog .articulos .articuloDos p {
+        margin: 10px;
+        color: #87234188;
+        padding-bottom: 15px; }
+      .blog .articulos .articuloDos button {
+        width: 100%;
+        background-color: #ff66663f;
+        border: none;
+        border-radius: 0px 0px 12px 12px;
+        text-align: right; }
+        .blog .articulos .articuloDos button img {
+          width: 80px;
+          border: none; }
+    .blog .articulos .articuloTres {
+      width: 70%;
+      background-color: #b42b5288;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      grid-area: articuloTres;
+      justify-self: center; }
+      .blog .articulos .articuloTres img {
+        padding: 20px;
+        border-radius: 12px;
+        width: 95%; }
+      .blog .articulos .articuloTres h3 {
+        color: #3C0753;
+        font-size: 20px;
+        margin: 10px;
+        text-align: left; }
+      .blog .articulos .articuloTres p {
+        margin: 10px;
+        color: #3c075388;
+        padding-bottom: 15px; }
+      .blog .articulos .articuloTres button {
+        width: 100%;
+        background-color: #b42b5288;
+        border: none;
+        border-radius: 0px 0px 12px 12px;
+        text-align: right; }
+        .blog .articulos .articuloTres button img {
+          width: 80px;
+          border: none; }
+    .blog .articulos .articuloCuatro {
+      width: 70%;
+      background-color: #b42b5288;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      grid-area: articuloCuatro;
+      justify-self: center; }
+      .blog .articulos .articuloCuatro img {
+        padding: 20px;
+        border-radius: 12px;
+        justify-self: center;
+        width: 95%; }
+      .blog .articulos .articuloCuatro h3 {
+        color: #3C0753;
+        font-size: 20px;
+        margin: 10px;
+        text-align: left; }
+      .blog .articulos .articuloCuatro p {
+        margin: 10px;
+        color: #3c075388;
+        padding-bottom: 15px; }
+      .blog .articulos .articuloCuatro button {
+        width: 100%;
+        background-color: #b42b5288;
+        border: none;
+        border-radius: 0px 0px 12px 12px;
+        text-align: right; }
+        .blog .articulos .articuloCuatro button img {
+          width: 80px;
+          border: none; }
 
 /**cursos**/
 .detalleCursos {
   display: flex;
   justify-content: center; }
-
-.automaquillaje {
-  width: 38%;
-  border: 2px solid #98217688;
-  border-radius: 10px;
-  margin: 30px; }
-
-.automaquillaje button {
-  width: 100%;
-  border: none;
-  border-radius: 0px 0px 10px 10px;
-  background-color: #98217688;
-  height: 40px; }
-
-.automaquillaje button a {
-  color: #3C0753; }
-
-.colorimetria {
-  width: 38%;
-  border: 2px solid #98217688;
-  border-radius: 10px;
-  margin: 30px; }
-
-.colorimetria button {
-  width: 100%;
-  border: none;
-  border-radius: 0px 0px 10px 10px;
-  background-color: #98217688;
-  height: 40px;
-  color: #3C0753; }
-
-.colorimetria button a {
-  color: #3C0753; }
-
-.contenido img {
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-right: 20px; }
-
-.contenido h3 {
-  font-size: 24px;
-  text-align: center;
-  width: 55%;
-  color: #3C0753;
-  background-color: #98217688;
-  margin-left: 200px;
-  border-radius: 20px;
-  border: 1px solid #3C0753;
-  padding: 5px 10px; }
-
-.contenido p {
-  color: #3c075388;
-  padding-left: 20px;
-  padding-bottom: 20px;
-  padding-top: 10px; }
-
-.calificaciones {
-  margin-left: 20px;
-  padding-bottom: 10px; }
-
-.calificaciones p {
-  display: inline;
-  color: #3c075388;
-  padding-left: 20px;
-  padding-bottom: 20px; }
+  .detalleCursos .automaquillaje {
+    width: 38%;
+    border: 2px solid #98217688;
+    border-radius: 10px;
+    margin: 30px; }
+    .detalleCursos .automaquillaje .contenido img {
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-right: 20px; }
+    .detalleCursos .automaquillaje .contenido h3 {
+      font-size: 24px;
+      text-align: center;
+      width: 55%;
+      color: #3C0753;
+      background-color: #98217688;
+      margin-left: 200px;
+      border-radius: 20px;
+      border: 1px solid #3C0753;
+      padding: 5px 10px; }
+    .detalleCursos .automaquillaje .contenido p {
+      color: #3c075388;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      padding-top: 10px; }
+    .detalleCursos .automaquillaje .calificaciones {
+      margin-left: 20px;
+      padding-bottom: 10px; }
+      .detalleCursos .automaquillaje .calificaciones p {
+        display: inline;
+        color: #3c075388;
+        padding-left: 20px;
+        padding-bottom: 20px; }
+    .detalleCursos .automaquillaje button {
+      width: 100%;
+      border: none;
+      border-radius: 0px 0px 10px 10px;
+      background-color: #98217688;
+      height: 40px; }
+      .detalleCursos .automaquillaje button a {
+        color: #3C0753; }
+  .detalleCursos .colorimetria {
+    width: 38%;
+    border: 2px solid #98217688;
+    border-radius: 10px;
+    margin: 30px; }
+    .detalleCursos .colorimetria .contenido img {
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-right: 20px; }
+    .detalleCursos .colorimetria .contenido h3 {
+      font-size: 24px;
+      text-align: center;
+      width: 55%;
+      color: #3C0753;
+      background-color: #98217688;
+      margin-left: 200px;
+      border-radius: 20px;
+      border: 1px solid #3C0753;
+      padding: 5px 10px; }
+    .detalleCursos .colorimetria .contenido p {
+      color: #3c075388;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      padding-top: 10px; }
+    .detalleCursos .colorimetria .calificaciones {
+      margin-left: 20px;
+      padding-bottom: 10px; }
+      .detalleCursos .colorimetria .calificaciones p {
+        display: inline;
+        color: #3c075388;
+        padding-left: 20px;
+        padding-bottom: 20px; }
+    .detalleCursos .colorimetria button {
+      width: 100%;
+      border: none;
+      border-radius: 0px 0px 10px 10px;
+      background-color: #98217688;
+      height: 40px;
+      color: #3C0753; }
+      .detalleCursos .colorimetria button a {
+        color: #3C0753; }
 
 .formularioCursos {
   margin: 10px 50px 10px 60px;
@@ -498,113 +457,99 @@ footer {
   width: 85%;
   border-radius: 10px;
   justify-content: center; }
-
-.formularioCursos h3 {
-  font-size: 20px;
-  color: #B42B51;
-  padding: 30px;
-  display: flex;
-  justify-content: center; }
-
-.datos input {
-  width: 90%;
-  margin-left: 30px;
-  margin-right: 30px;
-  border: none;
-  border-bottom: 1px solid #b42b5288;
-  background-color: #b42b5200; }
-
-.datos p {
-  color: #b42b5288;
-  margin-left: 30px;
-  margin-top: 10px; }
-
-.mensaje input {
-  width: 90%;
-  height: 150px;
-  margin: 10px 30px;
-  border: 1px solid #b42b5288;
-  background-color: #feece2d6;
-  border-radius: 10px; }
-
-.mensaje p {
-  color: #b42b5288;
-  margin-left: 30px;
-  margin-top: 10px; }
-
-.formularioCursos button {
-  width: 10%;
-  margin: 20px 30px;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 0px 4px 4px #ff666696;
-  padding: 5px 0px;
-  background-color: #FEECE2; }
-
-.formularioCursos button a {
-  color: #B42B51; }
+  .formularioCursos h3 {
+    font-size: 20px;
+    color: #B42B51;
+    padding: 30px;
+    display: flex;
+    justify-content: center; }
+  .formularioCursos .datos input {
+    width: 90%;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: none;
+    border-bottom: 1px solid #b42b5288;
+    background-color: #b42b5200; }
+  .formularioCursos .datos p {
+    color: #b42b5288;
+    margin-left: 30px;
+    margin-top: 10px; }
+  .formularioCursos .mensaje input {
+    width: 90%;
+    height: 150px;
+    margin: 10px 30px;
+    border: 1px solid #b42b5288;
+    background-color: #feece2d6;
+    border-radius: 10px; }
+  .formularioCursos .mensaje p {
+    color: #b42b5288;
+    margin-left: 30px;
+    margin-top: 10px; }
+  .formularioCursos button {
+    width: 10%;
+    margin: 20px 30px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 4px #ff666696;
+    padding: 5px 0px;
+    background-color: #FEECE2; }
+    .formularioCursos button a {
+      color: #B42B51; }
 
 /**tutoriales**/
 .tutoriales {
   margin: 50px 0px; }
-
-.seccionMaquillaje {
-  margin: 15px;
-  display: grid;
-  grid-template-areas: "headM headM headM" "video1 video2 video3";
-  width: 100%;
-  grid-template-columns: repeat(3, 1fr); }
-
-.seccionMaquillaje h2 {
-  color: #872341;
-  font-family: "Marko One", serif;
-  padding: 15px;
-  grid-area: headM; }
-
-.video1 {
-  grid-area: video1; }
-
-.video2 {
-  grid-area: video2; }
-
-.video3 {
-  grid-area: video3; }
-
-.seccionMaquillaje iframe {
-  border-radius: 10px;
-  border: 3px solid #FF6666; }
-
-.seccionPeinado {
-  margin: 15px;
-  display: grid;
-  grid-template-areas: "headP headP headP" "peinado1 peinado2 peinado3";
-  width: 100%;
-  grid-template-columns: repeat(3, 1fr); }
-
-.peinado1 {
-  grid-area: peinado1; }
-
-.peinado2 {
-  grid-area: peinado2; }
-
-.peinado3 {
-  grid-area: peinado3; }
-
-.seccionPeinado h2 {
-  color: #3C0753;
-  font-family: "Marko One", serif;
-  padding: 15px;
-  grid-area: headP; }
-
-.seccionPeinado iframe {
-  border-radius: 10px;
-  border: 3px solid #982176; }
+  .tutoriales .seccionMaquillaje {
+    margin: 15px;
+    display: grid;
+    grid-template-areas: "headM headM headM" "video1 video2 video3";
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr); }
+    .tutoriales .seccionMaquillaje h2 {
+      color: #872341;
+      font-family: "Marko One", serif;
+      padding: 15px;
+      grid-area: headM; }
+    .tutoriales .seccionMaquillaje .video1 {
+      grid-area: video1; }
+    .tutoriales .seccionMaquillaje .video2 {
+      grid-area: video2; }
+    .tutoriales .seccionMaquillaje .video3 {
+      grid-area: video3; }
+    .tutoriales .seccionMaquillaje iframe {
+      border-radius: 10px;
+      border: 3px solid #FF6666; }
+  .tutoriales .seccionPeinado {
+    margin: 15px;
+    display: grid;
+    grid-template-areas: "headP headP headP" "peinado1 peinado2 peinado3";
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr); }
+    .tutoriales .seccionPeinado h2 {
+      color: #3C0753;
+      font-family: "Marko One", serif;
+      padding: 15px;
+      grid-area: headP; }
+    .tutoriales .seccionPeinado .peinado1 {
+      grid-area: peinado1; }
+    .tutoriales .seccionPeinado .peinado2 {
+      grid-area: peinado2; }
+    .tutoriales .seccionPeinado .peinado3 {
+      grid-area: peinado3; }
+    .tutoriales .seccionPeinado iframe {
+      border-radius: 10px;
+      border: 3px solid #982176; }
 
 /** media queries **/
 /*1024px*/
 @media (max-width: 1024px) {
+  /**estilos generales**/
   p {
     font-size: 12px; }
+  .redesSociales h4 {
+    font-size: 16px;
+    margin: 0px 15px; }
+  /**index**/
   .fondo h1 {
     font-size: 45px;
     width: 300px;
@@ -614,8 +559,10 @@ footer {
     margin: 20px; }
   .galeria img {
     width: 28%; }
+  /**quien soy**/
   .avatarQuienSoy img {
     width: 150px; }
+  /**blog**/
   .articuloUno button {
     margin-top: 40px; }
   .articuloDos button {
@@ -625,19 +572,23 @@ footer {
   .articuloCuatro button {
     margin-top: 47px; }
   .categorias h2 {
-    font-size: 18px; }
-  .redesSociales h4 {
-    font-size: 16px;
-    margin: 0px 15px; } }
+    font-size: 18px; } }
 
 /**768px**/
 @media (max-width: 768px) {
+  /**estilos generales**/
   .encabezado h1 {
     font-size: 25px; }
   .encabezado li {
     padding: 0; }
-  .encabezado li a {
-    font-size: 12px; }
+    .encabezado li a {
+      font-size: 12px; }
+  .redesSociales h4 {
+    font-size: 14px;
+    margin: 0px 15px; }
+  .redesSociales a {
+    margin: 0px 15px; }
+  /**index**/
   .fondo h1 {
     font-size: 35px;
     width: 250px;
@@ -645,52 +596,53 @@ footer {
     left: 50px; }
   .bio h2 {
     font-size: 20px; }
-  p {
+  .bio p {
     font-size: 10px; }
+  /**quien soy**/
   .avatarQuienSoy img {
     width: 100px; }
   .descripcion h2 {
     font-size: 25px; }
   .trabajos h2 {
     font-size: 25px; }
+  /**blog**/
   .articuloUno h3 {
-    font-size: 16px; }
-  .articuloDos h3 {
-    font-size: 16px; }
-  .articuloTres h3 {
-    font-size: 16px; }
-  .articuloCuatro h3 {
     font-size: 16px; }
   .articuloUno button img {
     width: 65px; }
+  .articuloDos h3 {
+    font-size: 16px; }
   .articuloDos button img {
     width: 65px; }
+  .articuloTres h3 {
+    font-size: 16px; }
   .articuloTres button img {
     width: 65px; }
+  .articuloCuatro h3 {
+    font-size: 16px; }
   .articuloCuatro button img {
     width: 65px; }
   .categorias h2 {
-    font-size: 16px; }
-  .redesSociales h4 {
-    font-size: 14px;
-    margin: 0px 15px; }
-  .redesSociales a {
-    margin: 0px 15px; } }
+    font-size: 16px; } }
 
 /**425px**/
 /**puse el max-width en 426 porque si lo ponía en 425 no me lo tomaba en esta medida sino en un pixel menos**/
 @media (max-width: 426px) {
+  /**estilos generales**/
   p {
     font-size: 8px; }
   .encabezado {
     padding: 0px 10px;
     flex-direction: column; }
-  .encabezado h1 {
+    .encabezado h1 {
+      display: none; }
+    .encabezado li {
+      padding: 0; }
+      .encabezado li a {
+        font-size: 8px; }
+  .redesSociales h4 {
     display: none; }
-  .encabezado li a {
-    font-size: 8px; }
-  .encabezado li {
-    padding: 0; }
+  /**index**/
   .fondo h1 {
     font-size: 25px;
     width: 170px;
@@ -698,51 +650,51 @@ footer {
     left: 30px; }
   .presentacion {
     flex-direction: column; }
-  .presentacion img {
-    width: 50%; }
-  .bio {
-    width: 90%; }
-  .bio h2 {
-    font-size: 15px; }
-  .bio p {
-    font-size: 8px; }
+    .presentacion img {
+      width: 50%; }
+    .presentacion .bio {
+      width: 90%; }
+      .presentacion .bio h2 {
+        font-size: 15px; }
+      .presentacion .bio p {
+        font-size: 8px; }
   .galeria {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .galeria img {
-    width: 80%;
-    justify-self: center; }
+    .galeria img {
+      width: 80%;
+      justify-self: center; }
+  /**quien soy**/
   .avatarQuienSoy img {
     width: 200px;
     position: relative;
     left: 50px; }
-  .descripcion {
-    width: 80%; }
-  .descripcion h2 {
-    font-size: 20px; }
-  .trabajos {
-    width: 90%; }
-  .trabajos h2 {
-    font-size: 20px; }
   .seccionUno {
     flex-direction: column;
     width: 80%;
     margin: 30px 40px; }
+    .seccionUno .descripcion {
+      width: 80%; }
+      .seccionUno .descripcion h2 {
+        font-size: 20px; }
+    .seccionUno .trabajos {
+      width: 90%; }
+      .seccionUno .trabajos h2 {
+        font-size: 20px; }
   .seccionDos h2 {
     font-size: 20px; }
-  .certificaciones {
+  .seccionDos .certificaciones {
     justify-content: space-around; }
-  .maquillajeSocial {
-    width: 20%; }
-  .maquillajeArtistico {
-    width: 20%; }
-  .maquillajeEditorial {
-    width: 20%; }
-  .peinado {
-    width: 20%; }
+    .seccionDos .certificaciones .maquillajeSocial {
+      width: 20%; }
+    .seccionDos .certificaciones .maquillajeArtistico {
+      width: 20%; }
+    .seccionDos .certificaciones .maquillajeEditorial {
+      width: 20%; }
+    .seccionDos .certificaciones .peinado {
+      width: 20%; }
+  /**blog**/
   .categorias h2 {
-    font-size: 16px; }
-  .redesSociales h4 {
-    display: none; } }
+    font-size: 16px; } }

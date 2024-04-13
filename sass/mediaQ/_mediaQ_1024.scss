@@ -1,8 +1,14 @@
 /*1024px*/
 @media (max-width: 1024px){
+    /**estilos generales**/
     p{
         font-size: 12px;
     }
+    .redesSociales h4{
+        font-size: 16px;
+        margin: 0px 15px
+    }
+    /**index**/
     .fondo h1{
         font-size: 45px;
         width: 300px;
@@ -15,9 +21,11 @@
     .galeria img{
         width: 28%;
     }
+    /**quien soy**/
     .avatarQuienSoy img{
         width: 150px;
     }
+    /**blog**/
     .articuloUno button{
         margin-top: 40px;
     }
@@ -32,9 +40,5 @@
     }
     .categorias h2{
         font-size: 18px;
-    }
-    .redesSociales h4{
-        font-size: 16px;
-        margin: 0px 15px
     }
 }

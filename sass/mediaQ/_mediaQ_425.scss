@@ -1,22 +1,27 @@
 /**425px**/
 /**puse el max-width en 426 porque si lo ponía en 425 no me lo tomaba en esta medida sino en un pixel menos**/
 @media (max-width: 426px){
+    /**estilos generales**/
     p{
         font-size: 8px;
     }
     .encabezado{
         padding: 0px 10px;
         flex-direction: column;
+        h1{
+            display: none;
+        }
+        li{
+            padding: 0;
+            a{
+                font-size: 8px;
+            }
+        }
     }
-    .encabezado h1{
+    .redesSociales h4{
         display: none;
     }
-    .encabezado li a{
-        font-size: 8px;
-    }
-    .encabezado li{
-        padding: 0;
-    }
+    /**index**/
     .fondo h1{
         font-size: 25px;
         width: 170px;
@@ -25,73 +30,74 @@
     }
     .presentacion{
         flex-direction: column;
-    }
-    .presentacion img{
-        width: 50%;
-    }
-    .bio{
-        width: 90%;
-    }
-    .bio h2{
-        font-size: 15px;
-    }
-    .bio p{
-        font-size: 8px;
+        img{
+            width: 50%;
+        }
+        .bio{
+            width: 90%;
+            h2{
+                font-size: 15px;
+            }
+            p{
+                font-size: 8px;
+            }
+        }
     }
     .galeria{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        img{
+            width: 80%;
+            justify-self: center;
+        }
     }
-    .galeria img{
-        width: 80%;
-        justify-self: center;
-    }
+    /**quien soy**/
     .avatarQuienSoy img{
         width: 200px;
         position:relative;
         left: 50px;
     }
-    .descripcion{
-        width: 80%;
-    }
-    .descripcion h2{
-        font-size: 20px;
-    }
-    .trabajos{
-        width: 90%;
-    }
-    .trabajos h2{
-        font-size: 20px;
-    }
     .seccionUno{
         flex-direction: column;
         width: 80%;
         margin: 30px 40px;
-    }
-    .seccionDos h2{
+        .descripcion{
+            width: 80%;
+            h2{
+                font-size: 20px;
+            }
+        }
+        .trabajos{
+            width: 90%;
+            h2{
+                font-size: 20px;
+            }
+        }
+    } 
+    .seccionDos{
+        h2{
         font-size: 20px;
+        }
+        .certificaciones{
+            justify-content: space-around;
+            .maquillajeSocial{
+                width: 20%;
+            }
+            .maquillajeArtistico{
+                width: 20%;
+            }
+             .maquillajeEditorial{
+                width: 20%;
+            }
+             .peinado{
+                width: 20%;
+            }
+        }
     }
-    .certificaciones{
-        justify-content: space-around;
-    }
-    .maquillajeSocial{
-        width: 20%;
-    }
-    .maquillajeArtistico{
-        width: 20%;
-     }
-     .maquillajeEditorial{
-        width: 20%;
-     }
-     .peinado{
-        width: 20%;
-     }
+    /**blog**/
      .categorias h2{
         font-size: 16px;
-    }
-    .redesSociales h4{
-        display: none;
     }
 }

@@ -1,26 +1,42 @@
 /**768px**/
 @media (max-width: 768px){
-    .encabezado h1{
+    /**estilos generales**/
+    .encabezado{
+        h1{
         font-size: 25px;
+        }
+        li{
+            padding: 0;
+            a{
+                font-size: 12px;
+            }
+        }
     }
-    .encabezado li{
-        padding: 0;
+    .redesSociales{
+        h4{
+        font-size: 14px;
+        margin: 0px 15px
+        }
+        a{
+            margin: 0px 15px;
+        }
     }
-    .encabezado li a{
-        font-size: 12px;
-    }
+    /**index**/
     .fondo h1{
         font-size: 35px;
         width: 250px;
         bottom: 150px;
         left: 50px;
     }
-    .bio h2{
+    .bio{
+        h2{
         font-size: 20px;
+        }
+        p{
+            font-size: 10px;
+        }
     }
-    p{
-        font-size: 10px;
-    }
+    /**quien soy**/
     .avatarQuienSoy img{
         width: 100px;
     }
@@ -30,38 +46,40 @@
     .trabajos h2{
         font-size: 25px;
     }
-    .articuloUno h3{
+    /**blog**/
+    .articuloUno{
+        h3{
         font-size: 16px;
+        }
+        button img{
+            width: 65px;
+        }
     }
-    .articuloDos h3{
+    .articuloDos{
+        h3{
         font-size: 16px;
+        }
+        button img{
+            width: 65px;
+        }
     }
-    .articuloTres h3{
+    .articuloTres{
+        h3{
         font-size: 16px;
+        }
+        button img{
+            width: 65px;
+        }
     }
-    .articuloCuatro h3{
+    .articuloCuatro{
+        h3{
         font-size: 16px;
-    }
-    .articuloUno button img{
-        width: 65px;
-    }
-    .articuloDos button img{
-        width: 65px;
-    }
-    .articuloTres button img{
-        width: 65px;
-    }
-    .articuloCuatro button img{
-        width: 65px;
+        }
+        button img{
+            width: 65px;
+        }
     }
     .categorias h2{
         font-size: 16px;
-    }
-    .redesSociales h4{
-        font-size: 14px;
-        margin: 0px 15px
-    }
-    .redesSociales a{
-        margin: 0px 15px;
     }
 }
