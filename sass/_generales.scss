@@ -1,0 +1,64 @@
+/** estilos generales **/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FEECE2;
+    font-family: "Marko One", serif;
+}
+h1{
+    font-size: 35px;
+    font-family: "Montez", cursive;
+    color: #FEECE2;
+    font-style: normal;
+}
+h4{
+    display: inline;
+    font-size: 20px;
+}
+a{
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "Marko One", serif;
+}
+p{
+    font-size: 14px;
+}
+li{
+    font-size: 16px;
+    padding: 10px;
+    list-style: none;
+}
+/** estilos del header **/
+header{
+    background-color: #B42B51;
+    width: 100%;
+}
+.encabezado{
+    color: #FEECE2;
+    padding: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.encabezado ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.encabezado li a{
+    color: #FEECE2;
+}
+/** estilos del footer **/
+footer{
+    background-color: black;
+    color: #FEECE2;
+    padding: 15px;
+}
+.redesSociales h4{
+    margin: 0px 20px;
+}
+.redesSociales a{
+    margin: 0px 20px;
+}

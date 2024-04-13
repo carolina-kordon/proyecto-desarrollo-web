@@ -1,0 +1,60 @@
+/**tutoriales**/
+.tutoriales{
+    margin: 50px 0px;
+}
+.seccionMaquillaje{
+    margin: 15px;
+    display: grid;
+    grid-template-areas:
+    "headM headM headM"
+    "video1 video2 video3";
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+}
+.seccionMaquillaje h2{
+    color:#872341;
+    font-family: "Marko One", serif;
+    padding: 15px;
+    grid-area: headM;
+}
+.video1{
+    grid-area: video1;
+}
+.video2{
+    grid-area: video2;
+}
+.video3{
+    grid-area: video3;
+}
+.seccionMaquillaje iframe{
+    border-radius: 10px;
+    border: 3px solid #FF6666;
+}
+.seccionPeinado{
+    margin: 15px;
+    display: grid;
+    grid-template-areas:
+    "headP headP headP"
+    "peinado1 peinado2 peinado3";
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+}
+.peinado1{
+    grid-area: peinado1;
+}
+.peinado2{
+    grid-area: peinado2;
+}
+.peinado3{
+    grid-area: peinado3;
+}
+.seccionPeinado h2{
+    color:#3C0753;
+    font-family: "Marko One", serif;
+    padding: 15px;
+    grid-area: headP;
+}
+.seccionPeinado iframe{
+    border-radius: 10px;
+    border: 3px solid #982176;
+}

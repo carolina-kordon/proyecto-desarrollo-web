@@ -1,0 +1,67 @@
+/**768px**/
+@media (max-width: 768px){
+    .encabezado h1{
+        font-size: 25px;
+    }
+    .encabezado li{
+        padding: 0;
+    }
+    .encabezado li a{
+        font-size: 12px;
+    }
+    .fondo h1{
+        font-size: 35px;
+        width: 250px;
+        bottom: 150px;
+        left: 50px;
+    }
+    .bio h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .avatarQuienSoy img{
+        width: 100px;
+    }
+    .descripcion h2{
+        font-size: 25px;
+    }
+    .trabajos h2{
+        font-size: 25px;
+    }
+    .articuloUno h3{
+        font-size: 16px;
+    }
+    .articuloDos h3{
+        font-size: 16px;
+    }
+    .articuloTres h3{
+        font-size: 16px;
+    }
+    .articuloCuatro h3{
+        font-size: 16px;
+    }
+    .articuloUno button img{
+        width: 65px;
+    }
+    .articuloDos button img{
+        width: 65px;
+    }
+    .articuloTres button img{
+        width: 65px;
+    }
+    .articuloCuatro button img{
+        width: 65px;
+    }
+    .categorias h2{
+        font-size: 16px;
+    }
+    .redesSociales h4{
+        font-size: 14px;
+        margin: 0px 15px
+    }
+    .redesSociales a{
+        margin: 0px 15px;
+    }
+}

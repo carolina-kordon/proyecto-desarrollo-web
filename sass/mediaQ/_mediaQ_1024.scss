@@ -1,0 +1,40 @@
+/*1024px*/
+@media (max-width: 1024px){
+    p{
+        font-size: 12px;
+    }
+    .fondo h1{
+        font-size: 45px;
+        width: 300px;
+        bottom: 200px;
+        left: 75px;
+    }
+    .presentacion img{
+        margin: 20px;
+    }
+    .galeria img{
+        width: 28%;
+    }
+    .avatarQuienSoy img{
+        width: 150px;
+    }
+    .articuloUno button{
+        margin-top: 40px;
+    }
+    .articuloDos button{
+        margin-top: 35px;
+    }
+    .articuloTres button{
+        margin-top: 35px;
+    }
+    .articuloCuatro button{
+        margin-top: 47px;
+    }
+    .categorias h2{
+        font-size: 18px;
+    }
+    .redesSociales h4{
+        font-size: 16px;
+        margin: 0px 15px
+    }
+}

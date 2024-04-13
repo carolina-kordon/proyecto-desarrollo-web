@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&family=Montez&display=swap');
+/*todo el sitio*/
+@import "./generales";
+/*secciones*/
+@import "./index";
+@import "./quien_soy";
+@import "./blog";
+@import "./cursos";
+@import "./tutoriales";
+
+/** media queries **/
+@import "./mediaQ/mediaQ_1024";
+@import "./mediaQ/mediaQ_768";
+@import "./mediaQ/mediaQ_425";
+
+
+
+
+
+
