@@ -1,7 +1,7 @@
 /*index*/
 .home{
     width: 100%;
-    background-color: #b42b5288;
+    background-image: linear-gradient(to right, black, #07040b, #36192f, #511a38, #6c3156);
     .fondo{
         img{
         width: 100%;
@@ -14,6 +14,14 @@
             font-size: 70px;
             width: 450px;
         }
+        p{
+            color: map-get($colores, letrasSecundarias);
+            position: relative;
+            bottom:300px;
+            left: 100px;
+            font-size: 25px;
+            font-family: map-get($fuentes, destacada);
+        }
     }
     .presentacion{
         display: flex;
@@ -24,42 +32,41 @@
         align-items: center;
         img{
             width: 30%;
-            margin: 30px;
+            margin-left: 15px;
         }
-    }
-    .bio{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        padding: 10px 20px;
-        p{
-            text-align: justify;
-            color: #982176;
-            margin: 5px 15px;
-        }
-        h2{
-            padding: 5px 5px 15px 5px;
-            color:#3C0753;
-            font-size: 30px;
-            text-align: center;
+        .bio{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+            h2{
+                padding: 5px 5px 15px 5px;
+                color:#07040b;
+                font-size: 30px;
+                text-align: center;
+            }
+            p{
+                text-align: justify;
+                color:map-get($colores, letras);
+                margin: 5px 15px;
+            }            
         }
     }
     .galeria{
-        background-color: #FEECE2;
-        padding: 5px;
-        box-shadow: 0px 15px 15px #3c075395;
+        background-color: linear-gradient(to right, black, #07040b, #36192f, #511a38, #6c3156);
+        padding: 20px;
         width: 100%;
         align-content: center;
-        left: 100px;
+        justify-content: center;
+        border-top: 6px dotted #982176;
         img{
             width: 30%;
-            margin: 15px;
+            margin: 5px;
         }
         h2{
             text-align: center;
-            font-family: "Montez", cursive;
-            color: #872341;
-            font-size: 30px;
+            color: map-get($colores, letras);
+            font-size: 40px;
         }
     }
 }

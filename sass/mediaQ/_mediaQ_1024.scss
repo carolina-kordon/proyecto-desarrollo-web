@@ -9,21 +9,41 @@
         margin: 0px 15px
     }
     /**index**/
-    .fondo h1{
-        font-size: 45px;
-        width: 300px;
-        bottom: 200px;
-        left: 75px;
-    }
-    .presentacion img{
-        margin: 20px;
-    }
-    .galeria img{
-        width: 28%;
+    .home{
+        .fondo{
+            h1{
+                font-size: 45px;
+                width: 300px;
+                bottom: 200px;
+                left: 75px;
+            }
+            p{
+                font-size: 18px;
+                width: 300px;
+                bottom: 200px;
+                left: 75px;
+            }
+        }
+       .presentacion img{
+            margin: 20px;
+        }
+        .galeria img{
+            width: 28%;
+        }
     }
     /**quien soy**/
-    .avatarQuienSoy img{
-        width: 150px;
+    .seccionUno{
+        .descripcion h2{
+            font-size: 26px;
+        }
+        .trabajos{
+            img{
+                height: 200px
+            }
+            h2{
+                font-size: 26px;
+            }
+        }
     }
     /**blog**/
     .articuloUno button{

@@ -1,5 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Marko+One&family=Montez&display=swap');
+/*utilities*/
+@import "./utilities/maps";
+@import "./utilities/mixins";
+@import "./utilities/variables";
 /*todo el sitio*/
 @import "./generales";
 /*secciones*/

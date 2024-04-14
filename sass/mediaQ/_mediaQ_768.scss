@@ -1,16 +1,18 @@
 /**768px**/
 @media (max-width: 768px){
     /**estilos generales**/
-    .encabezado{
-        h1{
-        font-size: 25px;
-        }
-        li{
-            padding: 0;
-            a{
-                font-size: 12px;
+    nav{
+        .encabezado{
+            h1{
+                font-size: 25px;
             }
-        }
+            li{
+                padding: 0;
+                a{
+                    font-size: 12px;
+                }
+            } 
+        }  
     }
     .redesSociales{
         h4{
@@ -22,29 +24,50 @@
         }
     }
     /**index**/
-    .fondo h1{
-        font-size: 35px;
-        width: 250px;
-        bottom: 150px;
-        left: 50px;
-    }
-    .bio{
-        h2{
-        font-size: 20px;
+    .home{
+        .fondo{
+            h1{
+                font-size: 35px;
+                width: 250px;
+                bottom: 150px;
+                left: 50px;
+            }
+            p{
+                font-size: 14px;
+                width: 250px;
+                bottom: 150px;
+                left: 50px;  
+            }
+        }    
+        .presentacion{
+            .bio{
+                h2{
+                font-size: 20px;
+                }
+                p{
+                font-size: 10px;
+                }
+            }
         }
-        p{
-            font-size: 10px;
-        }
-    }
+    }    
     /**quien soy**/
-    .avatarQuienSoy img{
-        width: 100px;
-    }
-    .descripcion h2{
-        font-size: 25px;
-    }
-    .trabajos h2{
-        font-size: 25px;
+    .seccionUno{
+        .descripcion{
+            h2{
+                font-size: 22px;
+            }
+            ul li{
+                font-size: 12px;
+            }
+        }
+        .trabajos{
+            h2{
+                font-size: 22px;
+            }
+            img{
+                height: 140px;
+            }
+        }
     }
     /**blog**/
     .articuloUno{

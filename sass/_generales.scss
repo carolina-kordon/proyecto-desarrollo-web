@@ -5,12 +5,12 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #FEECE2;
-    font-family: "Marko One", serif;
+    background-color: map-get($colores, fondo);
+    font-family: map-get($fuentes, general);
 }
 h1{
     font-size: 35px;
-    font-family: "Montez", cursive;
+    font-family: map-get($fuentes, destacada);
     color: #FEECE2;
     font-style: normal;
 }
@@ -21,7 +21,7 @@ h4{
 a{
     font-size: 16px;
     text-decoration: none;
-    font-family: "Marko One", serif;
+    font-family: map-get($fuentes, general);
     color:  #FEECE2;
 }
 p{
@@ -34,7 +34,7 @@ li{
 }
 /** estilos del header **/
 header{
-    background-color: #B42B51;
+    background-image: linear-gradient(to left, black, #07040b, #36192f, #511a38, #6c3156);
     width: 100%;
     nav{
         .encabezado{
@@ -46,8 +46,17 @@ header{
             ul{
                 display: flex;
                 flex-wrap: nowrap;
-                li a{
-                    color: #FEECE2;
+                padding: 0;
+                li{
+                    &:hover{
+                        color: map-get($colores, hover);
+                    }
+                    a{
+                        color: #FEECE2;
+                        &:hover{
+                            color: map-get($colores, hover);
+                        }
+                    }
                 }
             }
         }
@@ -56,7 +65,7 @@ header{
 
 /** estilos del footer **/
 footer{
-    background-color: black;
+    background-color: map-get($colores, fondo);
     color: #FEECE2;
     padding: 15px;
     .redesSociales{ 

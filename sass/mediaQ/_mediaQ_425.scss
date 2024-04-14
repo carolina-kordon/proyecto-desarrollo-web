@@ -5,16 +5,18 @@
     p{
         font-size: 8px;
     }
-    .encabezado{
-        padding: 0px 10px;
-        flex-direction: column;
-        h1{
-            display: none;
-        }
-        li{
-            padding: 0;
-            a{
-                font-size: 8px;
+    header nav{
+        .encabezado{
+            padding: 10px;
+            flex-direction: column;
+            h1{
+                display: none;
+            }
+            li{
+                padding: 0;
+                a{
+                    font-size: 8px;
+                }
             }
         }
     }
@@ -22,24 +24,34 @@
         display: none;
     }
     /**index**/
-    .fondo h1{
-        font-size: 25px;
-        width: 170px;
-        bottom: 100px;
-        left: 30px;
-    }
-    .presentacion{
-        flex-direction: column;
-        img{
-            width: 50%;
-        }
-        .bio{
-            width: 90%;
-            h2{
-                font-size: 15px;
+    .home{
+        .fondo{
+            h1{
+                font-size: 25px;
+                width: 170px;
+                bottom: 100px;
+                left: 30px;
             }
             p{
-                font-size: 8px;
+                font-size: 12px;
+                width: 170px;
+                bottom: 100px;
+                left: 30px;
+            }
+        }    
+        .presentacion{
+            flex-direction: column;
+            img{
+                width: 50%;
+            }
+            .bio{
+                width: 90%;
+                h2{
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 8px;
+                }
             }
         }
     }
@@ -54,31 +66,33 @@
         }
     }
     /**quien soy**/
-    .avatarQuienSoy img{
-        width: 200px;
-        position:relative;
-        left: 50px;
-    }
     .seccionUno{
         flex-direction: column;
-        width: 80%;
-        margin: 30px 40px;
+        width: 100%;
+        align-items: center;
+        padding: 15px;
         .descripcion{
-            width: 80%;
+            width: 100%;
             h2{
-                font-size: 20px;
+                font-size: 18px;
             }
+            ul li{
+                font-size: 10px;
+               }
         }
         .trabajos{
-            width: 90%;
+            width: 100%;
             h2{
-                font-size: 20px;
+                font-size: 18px;
+            }
+            img{
+                height: 110px;
             }
         }
     } 
     .seccionDos{
         h2{
-        font-size: 20px;
+        font-size: 18px;
         }
         .certificaciones{
             justify-content: space-around;
