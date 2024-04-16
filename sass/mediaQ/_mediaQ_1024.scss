@@ -46,19 +46,32 @@
         }
     }
     /**blog**/
-    .articuloUno button{
-        margin-top: 40px;
-    }
-    .articuloDos button{
-        margin-top: 35px;
-    }
-    .articuloTres button{
-        margin-top: 35px;
-    }
-    .articuloCuatro button{
-        margin-top: 47px;
-    }
-    .categorias h2{
-        font-size: 18px;
+    .blog {
+        .menu{
+            .busqueda input{
+                height: 36px;
+            }
+            .categorias{
+                padding: 15px;
+                h2{
+                    font-size: 18px;
+                }
+                ul li{
+                    font-size: 10px;
+                }
+            }    
+        }
+        .articulos .articuloUno{
+            img{
+                height: 200px;
+            }
+            h3{
+                font-size: 18px;
+            }
+            button{
+                height: 35px;
+                font-size: 13px;
+            }
+        }
     }
 }

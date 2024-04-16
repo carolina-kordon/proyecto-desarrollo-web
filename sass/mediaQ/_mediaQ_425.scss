@@ -2,9 +2,9 @@
 /**puse el max-width en 426 porque si lo ponía en 425 no me lo tomaba en esta medida sino en un pixel menos**/
 @media (max-width: 426px){
     /**estilos generales**/
-    p{
+    /*p{
         font-size: 8px;
-    }
+    }*/
     header nav{
         .encabezado{
             padding: 10px;
@@ -42,7 +42,7 @@
         .presentacion{
             flex-direction: column;
             img{
-                width: 50%;
+                width: 70%;
             }
             .bio{
                 width: 90%;
@@ -61,7 +61,7 @@
         justify-content: center;
         align-items: center;
         img{
-            width: 80%;
+            width: 100%;
             justify-self: center;
         }
     }
@@ -90,28 +90,21 @@
             }
         }
     } 
-    .seccionDos{
-        h2{
-        font-size: 18px;
-        }
-        .certificaciones{
-            justify-content: space-around;
-            .maquillajeSocial{
-                width: 20%;
-            }
-            .maquillajeArtistico{
-                width: 20%;
-            }
-             .maquillajeEditorial{
-                width: 20%;
-            }
-             .peinado{
-                width: 20%;
-            }
-        }
-    }
     /**blog**/
-     .categorias h2{
-        font-size: 16px;
+    .blog{
+        .menu .busqueda input{
+            width: 320px;
+            height: 28px;
+        }
+        .articulos{
+            grid-template-areas: 
+            "articuloUno"
+            "articuloDos"
+            "articuloTres"
+            "articuloCuatro";
+            width: 90%;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }

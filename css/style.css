@@ -1,5 +1,7 @@
 @charset "UTF-8";
+/*fuentes*/
 @import url("https://fonts.googleapis.com/css2?family=Marko+One&family=Montez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
 /*utilities*/
 /*todo el sitio*/
 /** estilos generales **/
@@ -10,7 +12,7 @@
 
 body {
   background-color: #07040b;
-  font-family: "Marko One"; }
+  font-family: "Platypi"; }
 
 h1 {
   font-size: 35px;
@@ -22,13 +24,13 @@ h4 {
   display: inline;
   font-size: 20px; }
 
-a {
+a, .detalleCursos .colorimetria .blog .articulos .articuloDos button a, .blog .articulos .articuloDos .detalleCursos .colorimetria button a, .detalleCursos .colorimetria .blog .articulos .articuloTres button a, .blog .articulos .articuloTres .detalleCursos .colorimetria button a, .detalleCursos .colorimetria .blog .articulos .articuloCuatro button a, .blog .articulos .articuloCuatro .detalleCursos .colorimetria button a, .detalleCursos .colorimetria button a {
   font-size: 16px;
   text-decoration: none;
-  font-family: "Marko One";
+  font-family: "Platypi";
   color: #FEECE2; }
 
-p {
+p, .blog .articulos .articuloDos p, .blog .articulos .articuloTres p, .blog .articulos .articuloCuatro p, .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .calificaciones p {
   font-size: 14px; }
 
 li {
@@ -48,14 +50,9 @@ header {
     justify-content: space-evenly; }
     header nav .encabezado ul {
       display: flex;
-      flex-wrap: nowrap;
-      padding: 0; }
-      header nav .encabezado ul li:hover {
-        color: #36192f; }
-      header nav .encabezado ul li a {
+      flex-wrap: nowrap; }
+      header nav .encabezado ul li a, header nav .encabezado ul li .detalleCursos .colorimetria button a, .detalleCursos .colorimetria button header nav .encabezado ul li a {
         color: #FEECE2; }
-        header nav .encabezado ul li a:hover {
-          color: #36192f; }
 
 /** estilos del footer **/
 footer {
@@ -64,7 +61,7 @@ footer {
   padding: 15px; }
   footer .redesSociales h4 {
     margin: 0px 20px; }
-  footer .redesSociales a {
+  footer .redesSociales a, footer .redesSociales .detalleCursos .colorimetria button a, .detalleCursos .colorimetria button footer .redesSociales a {
     margin: 0px 20px; }
 
 /*secciones*/
@@ -72,7 +69,7 @@ footer {
 .home {
   width: 100%;
   background-image: linear-gradient(to right, black, #07040b, #36192f, #511a38, #6c3156); }
-  .home .fondo img {
+  .home .fondo img, .home .fondo .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .home .fondo img {
     width: 100%; }
   .home .fondo h1 {
     color: #982176;
@@ -81,13 +78,13 @@ footer {
     left: 100px;
     font-size: 70px;
     width: 450px; }
-  .home .fondo p {
+  .home .fondo p, .home .fondo .blog .articulos .articuloDos p, .blog .articulos .articuloDos .home .fondo p, .home .fondo .blog .articulos .articuloTres p, .blog .articulos .articuloTres .home .fondo p, .home .fondo .blog .articulos .articuloCuatro p, .blog .articulos .articuloCuatro .home .fondo p, .home .fondo .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .contenido .home .fondo p, .home .fondo .detalleCursos .colorimetria .calificaciones p, .detalleCursos .colorimetria .calificaciones .home .fondo p {
     color: #c02995;
     position: relative;
     bottom: 300px;
     left: 100px;
     font-size: 25px;
-    font-family: "Montez"; }
+    font-family: "Platypi"; }
   .home .presentacion {
     display: flex;
     align-content: center;
@@ -95,7 +92,7 @@ footer {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center; }
-    .home .presentacion img {
+    .home .presentacion img, .home .presentacion .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .home .presentacion img {
       width: 30%;
       margin-left: 15px; }
     .home .presentacion .bio {
@@ -118,8 +115,8 @@ footer {
     width: 100%;
     align-content: center;
     justify-content: center;
-    border-top: 6px dotted #982176; }
-    .home .galeria img {
+    border-top: 15px solid #07040b; }
+    .home .galeria img, .home .galeria .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .home .galeria img {
       width: 30%;
       margin: 5px; }
     .home .galeria h2 {
@@ -137,8 +134,8 @@ footer {
     text-align: right;
     margin: 10px; }
     .seccionUno .descripcion h2 {
-      font-family: "Marko One";
-      color: #c02995;
+      font-family: "Platypi";
+      color: #36192f;
       font-size: 30px;
       text-align: left;
       padding: 5px; }
@@ -156,57 +153,16 @@ footer {
     padding-right: 30px;
     padding-bottom: 15px; }
     .seccionUno .trabajos h2 {
-      font-family: "Marko One";
-      color: #c02995;
+      font-family: "Platypi";
+      color: #36192f;
       font-size: 30px;
       text-align: left;
       padding: 5px; }
-    .seccionUno .trabajos img {
+    .seccionUno .trabajos img, .seccionUno .trabajos .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .seccionUno .trabajos img {
       width: 30%;
       height: 250px; }
       .seccionUno .trabajos img:hover {
         transform: scale(2, 2); }
-
-.seccionDos {
-  width: 100%; }
-  .seccionDos h2 {
-    text-align: center;
-    margin: 20px;
-    font-family: "Marko One";
-    color: #872341;
-    font-size: 30px; }
-  .seccionDos .certificaciones {
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly; }
-    .seccionDos .certificaciones .maquillajeSocial {
-      padding: 40px 15px;
-      width: 15%;
-      background-color: #98217688;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      color: #982176; }
-    .seccionDos .certificaciones .maquillajeArtistico {
-      padding: 40px 15px;
-      width: 15%;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      color: #872341;
-      background-color: #87234188; }
-    .seccionDos .certificaciones .maquillajeEditorial {
-      padding: 40px 15px;
-      width: 15%;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      color: #B42B51;
-      background-color: #b42b5288; }
-    .seccionDos .certificaciones .peinado {
-      padding: 40px 15px;
-      width: 15%;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      color: #3C0753;
-      background-color: #3c075388; }
 
 /**blog**/
 .blog {
@@ -223,31 +179,31 @@ footer {
     .blog .menu .busqueda input {
       width: 100%;
       height: 40px;
-      border: 2px solid #b42b5288;
+      border: 2px solid #f5b3ef94;
       border-radius: 20px;
       margin-top: 25px;
-      background-color: #FEECE2; }
+      background-color: #07040b; }
     .blog .menu .busqueda p {
-      color: #b42b5288;
+      color: #f5b3ef94;
       margin-right: 15px;
       font-size: 15px; }
     .blog .menu .categorias {
       text-align: center;
       padding: 20px;
       width: 100%;
-      background-color: #3c075388;
+      background-color: #c0299570;
       border-radius: 10px;
       margin-right: 15px; }
       .blog .menu .categorias h2 {
-        font-family: "Marko One", serif;
+        font-family: "Platypi";
         color: #FEECE2;
         font-size: 24px;
-        border-bottom: 1px solid #3C0753;
+        border-bottom: 1px solid #07040b;
         padding-bottom: 10px;
         margin: 5px; }
       .blog .menu .categorias ul li {
         color: #feece288;
-        border-bottom: 1px solid #3C0753;
+        border-bottom: 1px solid #07040b;
         padding-bottom: 10px;
         margin: 5px;
         font-size: 12px; }
@@ -255,225 +211,124 @@ footer {
     width: 100%;
     display: grid;
     grid-template-areas: "articuloUno articuloDos" "articuloTres articuloCuatro";
-    justify-content: flex-start; }
-    .blog .articulos .articuloUno {
-      width: 70%;
-      background-color: #ff66663f;
-      border-radius: 12px;
+    justify-content: center; }
+    .blog .articulos .articuloUno, .blog .articulos .articuloDos, .blog .articulos .articuloTres, .blog .articulos .articuloCuatro {
+      width: 80%;
+      background-color: #6c3156;
       margin-bottom: 20px;
       margin-top: 20px;
-      grid-area: articuloUno;
-      justify-self: center; }
-      .blog .articulos .articuloUno img {
+      padding: 10px;
+      justify-self: center;
+      grid-area: articuloUno; }
+      .blog .articulos .articuloUno img, .blog .articulos .articuloDos img, .blog .articulos .articuloTres img, .blog .articulos .articuloCuatro img {
         padding: 20px;
-        border-radius: 12px;
-        width: 95%; }
-      .blog .articulos .articuloUno h3 {
-        color: #872341;
+        width: 95%;
+        height: 250px; }
+      .blog .articulos .articuloUno h3, .blog .articulos .articuloDos h3, .blog .articulos .articuloTres h3, .blog .articulos .articuloCuatro h3 {
+        color: #07040b;
         font-size: 20px;
         margin: 10px;
         text-align: left; }
-      .blog .articulos .articuloUno p {
-        margin: 10px;
-        color: #87234188;
-        padding-bottom: 15px; }
-      .blog .articulos .articuloUno button {
-        width: 100%;
-        background-color: #ff66663f;
+      .blog .articulos .articuloUno p, .blog .articulos .articuloDos p, .blog .articulos .articuloTres p, .blog .articulos .articuloCuatro p {
+        margin: 15px;
+        color: #f5b3ef94;
+        padding: 15px 0px; }
+      .blog .articulos .articuloUno button, .blog .articulos .articuloDos button, .blog .articulos .articuloTres button, .blog .articulos .articuloCuatro button {
+        width: 50%;
+        background-color: #6c315688;
+        box-shadow: 3px 3px 3px 3px #07040b88;
         border: none;
-        border-radius: 0px 0px 12px 12px;
-        text-align: right;
-        margin-top: 35px; }
-        .blog .articulos .articuloUno button img {
-          width: 80px;
-          border: none; }
+        border-radius: 5px;
+        text-align: center;
+        margin: 15px;
+        height: 50px;
+        font-family: "Platypi";
+        font-size: 15px;
+        color: #07040b; }
+        .blog .articulos .articuloUno button:hover, .blog .articulos .articuloDos button:hover, .blog .articulos .articuloTres button:hover, .blog .articulos .articuloCuatro button:hover {
+          background-color: #442037; }
     .blog .articulos .articuloDos {
-      width: 70%;
-      background-color: #ff66663f;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      margin-top: 20px;
-      grid-area: articuloDos;
-      justify-self: center; }
+      grid-area: articuloDos; }
       .blog .articulos .articuloDos img {
         padding: 20px;
-        border-radius: 12px;
         width: 95%; }
-      .blog .articulos .articuloDos h3 {
-        color: #872341;
-        font-size: 20px;
-        margin: 10px;
-        text-align: left; }
-      .blog .articulos .articuloDos p {
-        margin: 10px;
-        color: #87234188;
-        padding-bottom: 15px; }
-      .blog .articulos .articuloDos button {
-        width: 100%;
-        background-color: #ff66663f;
-        border: none;
-        border-radius: 0px 0px 12px 12px;
-        text-align: right; }
-        .blog .articulos .articuloDos button img {
-          width: 80px;
-          border: none; }
-    .blog .articulos .articuloTres {
-      width: 70%;
-      background-color: #b42b5288;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      margin-top: 20px;
-      grid-area: articuloTres;
-      justify-self: center; }
-      .blog .articulos .articuloTres img {
+    .blog .articulos .articuloTres, .blog .articulos .articuloCuatro {
+      background-color: #442037;
+      grid-area: articuloTres; }
+      .blog .articulos .articuloTres img, .blog .articulos .articuloCuatro img {
         padding: 20px;
-        border-radius: 12px;
-        width: 95%; }
-      .blog .articulos .articuloTres h3 {
-        color: #3C0753;
-        font-size: 20px;
-        margin: 10px;
-        text-align: left; }
-      .blog .articulos .articuloTres p {
-        margin: 10px;
-        color: #3c075388;
-        padding-bottom: 15px; }
-      .blog .articulos .articuloTres button {
-        width: 100%;
-        background-color: #b42b5288;
-        border: none;
-        border-radius: 0px 0px 12px 12px;
-        text-align: right; }
-        .blog .articulos .articuloTres button img {
-          width: 80px;
-          border: none; }
+        Width: 95%; }
+      .blog .articulos .articuloTres button, .blog .articulos .articuloCuatro button {
+        background-color: #442037; }
+        .blog .articulos .articuloTres button:hover, .blog .articulos .articuloCuatro button:hover {
+          background-color: #07040b88; }
     .blog .articulos .articuloCuatro {
-      width: 70%;
-      background-color: #b42b5288;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      margin-top: 20px;
-      grid-area: articuloCuatro;
-      justify-self: center; }
+      grid-area: articuloCuatro; }
       .blog .articulos .articuloCuatro img {
         padding: 20px;
-        border-radius: 12px;
-        justify-self: center;
         width: 95%; }
-      .blog .articulos .articuloCuatro h3 {
-        color: #3C0753;
-        font-size: 20px;
-        margin: 10px;
-        text-align: left; }
-      .blog .articulos .articuloCuatro p {
-        margin: 10px;
-        color: #3c075388;
-        padding-bottom: 15px; }
       .blog .articulos .articuloCuatro button {
-        width: 100%;
-        background-color: #b42b5288;
-        border: none;
-        border-radius: 0px 0px 12px 12px;
-        text-align: right; }
-        .blog .articulos .articuloCuatro button img {
-          width: 80px;
-          border: none; }
+        margin: 5px; }
 
 /**cursos**/
 .detalleCursos {
   display: flex;
   justify-content: center; }
-  .detalleCursos .automaquillaje {
+  .detalleCursos .automaquillaje, .detalleCursos .colorimetria {
     width: 38%;
-    border: 2px solid #98217688;
-    border-radius: 10px;
+    border: 2px solid #f5b3ef94;
+    border-radius: 5px;
     margin: 30px; }
-    .detalleCursos .automaquillaje .contenido img {
+    .detalleCursos .automaquillaje .contenido img, .detalleCursos .colorimetria .contenido img {
       padding-left: 20px;
       padding-top: 20px;
       padding-right: 20px; }
-    .detalleCursos .automaquillaje .contenido h3 {
+    .detalleCursos .automaquillaje .contenido h3, .detalleCursos .colorimetria .contenido h3 {
       font-size: 24px;
       text-align: center;
       width: 55%;
-      color: #3C0753;
-      background-color: #98217688;
-      margin-left: 200px;
-      border-radius: 20px;
-      border: 1px solid #3C0753;
+      color: #07040b;
+      background-color: #f5b3ef94;
+      margin-left: 190px;
+      border-radius: 5px;
+      border: 1px solid #07040b;
       padding: 5px 10px; }
-    .detalleCursos .automaquillaje .contenido p {
-      color: #3c075388;
+    .detalleCursos .automaquillaje .contenido p, .detalleCursos .colorimetria .contenido p {
+      color: #f5b3ef94;
       padding-left: 20px;
       padding-bottom: 20px;
       padding-top: 10px; }
-    .detalleCursos .automaquillaje .calificaciones {
+    .detalleCursos .automaquillaje .calificaciones, .detalleCursos .colorimetria .calificaciones {
       margin-left: 20px;
       padding-bottom: 10px; }
-      .detalleCursos .automaquillaje .calificaciones p {
+      .detalleCursos .automaquillaje .calificaciones p, .detalleCursos .colorimetria .calificaciones p {
         display: inline;
-        color: #3c075388;
+        color: #36192f;
         padding-left: 20px;
         padding-bottom: 20px; }
-    .detalleCursos .automaquillaje button {
+    .detalleCursos .automaquillaje button, .detalleCursos .automaquillaje .blog .articulos .articuloDos button, .blog .articulos .articuloDos .detalleCursos .automaquillaje button, .detalleCursos .colorimetria .blog .articulos .articuloDos button, .blog .articulos .articuloDos .detalleCursos .colorimetria button, .detalleCursos .automaquillaje .blog .articulos .articuloTres button, .blog .articulos .articuloTres .detalleCursos .automaquillaje button, .detalleCursos .colorimetria .blog .articulos .articuloTres button, .blog .articulos .articuloTres .detalleCursos .colorimetria button, .detalleCursos .automaquillaje .blog .articulos .articuloCuatro button, .blog .articulos .articuloCuatro .detalleCursos .automaquillaje button, .detalleCursos .colorimetria .blog .articulos .articuloCuatro button, .blog .articulos .articuloCuatro .detalleCursos .colorimetria button, .detalleCursos .automaquillaje .colorimetria button, .detalleCursos .colorimetria .automaquillaje button, .detalleCursos .colorimetria button {
       width: 100%;
       border: none;
-      border-radius: 0px 0px 10px 10px;
-      background-color: #98217688;
+      border-radius: 0px 0px 5px 5px;
+      background-color: #f5b3ef94;
       height: 40px; }
-      .detalleCursos .automaquillaje button a {
-        color: #3C0753; }
-  .detalleCursos .colorimetria {
-    width: 38%;
-    border: 2px solid #98217688;
-    border-radius: 10px;
-    margin: 30px; }
-    .detalleCursos .colorimetria .contenido img {
-      padding-left: 20px;
-      padding-top: 20px;
-      padding-right: 20px; }
-    .detalleCursos .colorimetria .contenido h3 {
-      font-size: 24px;
-      text-align: center;
-      width: 55%;
-      color: #3C0753;
-      background-color: #98217688;
-      margin-left: 200px;
-      border-radius: 20px;
-      border: 1px solid #3C0753;
-      padding: 5px 10px; }
-    .detalleCursos .colorimetria .contenido p {
-      color: #3c075388;
-      padding-left: 20px;
-      padding-bottom: 20px;
-      padding-top: 10px; }
-    .detalleCursos .colorimetria .calificaciones {
-      margin-left: 20px;
-      padding-bottom: 10px; }
-      .detalleCursos .colorimetria .calificaciones p {
-        display: inline;
-        color: #3c075388;
-        padding-left: 20px;
-        padding-bottom: 20px; }
-    .detalleCursos .colorimetria button {
-      width: 100%;
-      border: none;
-      border-radius: 0px 0px 10px 10px;
-      background-color: #98217688;
-      height: 40px;
-      color: #3C0753; }
-      .detalleCursos .colorimetria button a {
-        color: #3C0753; }
+      .detalleCursos .automaquillaje button a, .detalleCursos .automaquillaje .blog .articulos .articuloDos button a, .blog .articulos .articuloDos .detalleCursos .automaquillaje button a, .detalleCursos .automaquillaje .blog .articulos .articuloTres button a, .blog .articulos .articuloTres .detalleCursos .automaquillaje button a, .detalleCursos .automaquillaje .blog .articulos .articuloCuatro button a, .blog .articulos .articuloCuatro .detalleCursos .automaquillaje button a, .detalleCursos .colorimetria .blog .articulos .articuloDos button a, .blog .articulos .articuloDos .detalleCursos .colorimetria button a, .detalleCursos .colorimetria .blog .articulos .articuloTres button a, .blog .articulos .articuloTres .detalleCursos .colorimetria button a, .detalleCursos .colorimetria .blog .articulos .articuloCuatro button a, .blog .articulos .articuloCuatro .detalleCursos .colorimetria button a, .detalleCursos .colorimetria button a {
+        color: #07040b; }
+        .detalleCursos .automaquillaje button a:hover, .detalleCursos .colorimetria button a:hover {
+          color: #36192f; }
+  .detalleCursos .colorimetria .calificaciones {
+    margin-left: 20px;
+    padding-bottom: 10px; }
 
 .formularioCursos {
-  margin: 10px 50px 10px 60px;
-  background-color: #ff66663f;
-  width: 85%;
-  border-radius: 10px;
+  margin: 10px 10px 10px 110px;
+  background-color: #07040b;
+  width: 80%;
+  border: 2px solid #36192f;
   justify-content: center; }
-  .formularioCursos h3 {
+  .formularioCursos h3, .formularioCursos .blog .articulos .articuloDos h3, .blog .articulos .articuloDos .formularioCursos h3, .formularioCursos .blog .articulos .articuloTres h3, .blog .articulos .articuloTres .formularioCursos h3, .formularioCursos .blog .articulos .articuloCuatro h3, .blog .articulos .articuloCuatro .formularioCursos h3, .formularioCursos .detalleCursos .colorimetria .contenido h3, .detalleCursos .colorimetria .contenido .formularioCursos h3 {
     font-size: 20px;
-    color: #B42B51;
+    color: #c02995;
     padding: 30px;
     display: flex;
     justify-content: center; }
@@ -482,33 +337,33 @@ footer {
     margin-left: 30px;
     margin-right: 30px;
     border: none;
-    border-bottom: 1px solid #b42b5288;
-    background-color: #b42b5200; }
-  .formularioCursos .datos p {
-    color: #b42b5288;
+    border-bottom: 1px solid #c0299580;
+    background-color: #07040b; }
+  .formularioCursos .datos p, .formularioCursos .datos .blog .articulos .articuloDos p, .blog .articulos .articuloDos .formularioCursos .datos p, .formularioCursos .datos .blog .articulos .articuloTres p, .blog .articulos .articuloTres .formularioCursos .datos p, .formularioCursos .datos .blog .articulos .articuloCuatro p, .blog .articulos .articuloCuatro .formularioCursos .datos p, .formularioCursos .datos .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .contenido .formularioCursos .datos p, .formularioCursos .datos .detalleCursos .colorimetria .calificaciones p, .detalleCursos .colorimetria .calificaciones .formularioCursos .datos p {
+    color: #c0299580;
     margin-left: 30px;
     margin-top: 10px; }
   .formularioCursos .mensaje input {
     width: 90%;
     height: 150px;
     margin: 10px 30px;
-    border: 1px solid #b42b5288;
-    background-color: #feece2d6;
+    border: 1px solid #c0299580;
+    background-color: #f5b3ef94;
     border-radius: 10px; }
-  .formularioCursos .mensaje p {
-    color: #b42b5288;
+  .formularioCursos .mensaje p, .formularioCursos .mensaje .blog .articulos .articuloDos p, .blog .articulos .articuloDos .formularioCursos .mensaje p, .formularioCursos .mensaje .blog .articulos .articuloTres p, .blog .articulos .articuloTres .formularioCursos .mensaje p, .formularioCursos .mensaje .blog .articulos .articuloCuatro p, .blog .articulos .articuloCuatro .formularioCursos .mensaje p, .formularioCursos .mensaje .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .contenido .formularioCursos .mensaje p, .formularioCursos .mensaje .detalleCursos .colorimetria .calificaciones p, .detalleCursos .colorimetria .calificaciones .formularioCursos .mensaje p {
+    color: #c0299580;
     margin-left: 30px;
     margin-top: 10px; }
-  .formularioCursos button {
+  .formularioCursos button, .formularioCursos .blog .articulos .articuloDos button, .blog .articulos .articuloDos .formularioCursos button, .formularioCursos .blog .articulos .articuloTres button, .blog .articulos .articuloTres .formularioCursos button, .formularioCursos .blog .articulos .articuloCuatro button, .blog .articulos .articuloCuatro .formularioCursos button, .formularioCursos .detalleCursos .colorimetria button, .detalleCursos .colorimetria .formularioCursos button {
     width: 10%;
     margin: 20px 30px;
     border-radius: 10px;
     border: none;
-    box-shadow: 0px 4px 4px #ff666696;
+    box-shadow: 0px 4px 4px #36192f;
     padding: 5px 0px;
-    background-color: #FEECE2; }
-    .formularioCursos button a {
-      color: #B42B51; }
+    background-color: #c0299580; }
+    .formularioCursos button a, .formularioCursos .blog .articulos .articuloDos button a, .blog .articulos .articuloDos .formularioCursos button a, .formularioCursos .blog .articulos .articuloTres button a, .blog .articulos .articuloTres .formularioCursos button a, .formularioCursos .blog .articulos .articuloCuatro button a, .blog .articulos .articuloCuatro .formularioCursos button a, .formularioCursos .detalleCursos .colorimetria button a, .detalleCursos .colorimetria .formularioCursos button a {
+      color: #07040b; }
 
 /**tutoriales**/
 .tutoriales {
@@ -558,7 +413,7 @@ footer {
 /*1024px*/
 @media (max-width: 1024px) {
   /**estilos generales**/
-  p {
+  p, .blog .articulos .articuloDos p, .blog .articulos .articuloTres p, .blog .articulos .articuloCuatro p, .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .calificaciones p {
     font-size: 12px; }
   .redesSociales h4 {
     font-size: 16px;
@@ -569,47 +424,54 @@ footer {
     width: 300px;
     bottom: 200px;
     left: 75px; }
-  .home .fondo p {
+  .home .fondo p, .home .fondo .blog .articulos .articuloDos p, .blog .articulos .articuloDos .home .fondo p, .home .fondo .blog .articulos .articuloTres p, .blog .articulos .articuloTres .home .fondo p, .home .fondo .blog .articulos .articuloCuatro p, .blog .articulos .articuloCuatro .home .fondo p, .home .fondo .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .contenido .home .fondo p, .home .fondo .detalleCursos .colorimetria .calificaciones p, .detalleCursos .colorimetria .calificaciones .home .fondo p {
     font-size: 18px;
     width: 300px;
     bottom: 200px;
     left: 75px; }
-  .home .presentacion img {
+  .home .presentacion img, .home .presentacion .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .home .presentacion img {
     margin: 20px; }
-  .home .galeria img {
+  .home .galeria img, .home .galeria .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .home .galeria img {
     width: 28%; }
   /**quien soy**/
   .seccionUno .descripcion h2 {
     font-size: 26px; }
-  .seccionUno .trabajos img {
+  .seccionUno .trabajos img, .seccionUno .trabajos .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .seccionUno .trabajos img {
     height: 200px; }
   .seccionUno .trabajos h2 {
     font-size: 26px; }
   /**blog**/
-  .articuloUno button {
-    margin-top: 40px; }
-  .articuloDos button {
-    margin-top: 35px; }
-  .articuloTres button {
-    margin-top: 35px; }
-  .articuloCuatro button {
-    margin-top: 47px; }
-  .categorias h2 {
-    font-size: 18px; } }
+  .blog .menu .busqueda input {
+    height: 36px; }
+  .blog .menu .categorias {
+    padding: 15px; }
+    .blog .menu .categorias h2 {
+      font-size: 18px; }
+    .blog .menu .categorias ul li {
+      font-size: 10px; }
+  .blog .articulos .articuloUno img, .blog .articulos .articuloDos img, .blog .articulos .articuloTres img, .blog .articulos .articuloCuatro img {
+    height: 200px; }
+  .blog .articulos .articuloUno h3, .blog .articulos .articuloDos h3, .blog .articulos .articuloTres h3, .blog .articulos .articuloCuatro h3 {
+    font-size: 18px; }
+  .blog .articulos .articuloUno button, .blog .articulos .articuloDos button, .blog .articulos .articuloTres button, .blog .articulos .articuloCuatro button {
+    height: 35px;
+    font-size: 13px; } }
 
 /**768px**/
 @media (max-width: 768px) {
   /**estilos generales**/
+  p, .blog .articulos .articuloDos p, .blog .articulos .articuloTres p, .blog .articulos .articuloCuatro p, .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .calificaciones p {
+    font-size: 10px; }
   nav .encabezado h1 {
     font-size: 25px; }
   nav .encabezado li {
     padding: 0; }
-    nav .encabezado li a {
+    nav .encabezado li a, nav .encabezado li .detalleCursos .colorimetria button a, .detalleCursos .colorimetria button nav .encabezado li a {
       font-size: 12px; }
   .redesSociales h4 {
     font-size: 14px;
     margin: 0px 15px; }
-  .redesSociales a {
+  .redesSociales a, .redesSociales .detalleCursos .colorimetria button a, .detalleCursos .colorimetria button .redesSociales a {
     margin: 0px 15px; }
   /**index**/
   .home .fondo h1 {
@@ -617,7 +479,7 @@ footer {
     width: 250px;
     bottom: 150px;
     left: 50px; }
-  .home .fondo p {
+  .home .fondo p, .home .fondo .blog .articulos .articuloDos p, .blog .articulos .articuloDos .home .fondo p, .home .fondo .blog .articulos .articuloTres p, .blog .articulos .articuloTres .home .fondo p, .home .fondo .blog .articulos .articuloCuatro p, .blog .articulos .articuloCuatro .home .fondo p, .home .fondo .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .contenido .home .fondo p, .home .fondo .detalleCursos .colorimetria .calificaciones p, .detalleCursos .colorimetria .calificaciones .home .fondo p {
     font-size: 14px;
     width: 250px;
     bottom: 150px;
@@ -633,34 +495,29 @@ footer {
     font-size: 12px; }
   .seccionUno .trabajos h2 {
     font-size: 22px; }
-  .seccionUno .trabajos img {
+  .seccionUno .trabajos img, .seccionUno .trabajos .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .seccionUno .trabajos img {
     height: 140px; }
   /**blog**/
-  .articuloUno h3 {
-    font-size: 16px; }
-  .articuloUno button img {
-    width: 65px; }
-  .articuloDos h3 {
-    font-size: 16px; }
-  .articuloDos button img {
-    width: 65px; }
-  .articuloTres h3 {
-    font-size: 16px; }
-  .articuloTres button img {
-    width: 65px; }
-  .articuloCuatro h3 {
-    font-size: 16px; }
-  .articuloCuatro button img {
-    width: 65px; }
-  .categorias h2 {
-    font-size: 16px; } }
+  .blog {
+    grid-template-columns: 1fr; }
+    .blog .menu .busqueda input {
+      width: 650px;
+      height: 32px; }
+    .blog .menu .categorias {
+      display: none; }
+    .blog .articulos .articuloUno h3, .blog .articulos .articuloDos h3, .blog .articulos .articuloTres h3, .blog .articulos .articuloCuatro h3 {
+      font-size: 16px; }
+    .blog .articulos .articuloUno button, .blog .articulos .articuloDos button, .blog .articulos .articuloTres button, .blog .articulos .articuloCuatro button {
+      height: 30px;
+      font-size: 11px; } }
 
 /**425px**/
 /**puse el max-width en 426 porque si lo ponía en 425 no me lo tomaba en esta medida sino en un pixel menos**/
 @media (max-width: 426px) {
   /**estilos generales**/
-  p {
-    font-size: 8px; }
+  /*p{
+        font-size: 8px;
+    }*/
   header nav .encabezado {
     padding: 10px;
     flex-direction: column; }
@@ -668,7 +525,7 @@ footer {
       display: none; }
     header nav .encabezado li {
       padding: 0; }
-      header nav .encabezado li a {
+      header nav .encabezado li a, header nav .encabezado li .detalleCursos .colorimetria button a, .detalleCursos .colorimetria button header nav .encabezado li a {
         font-size: 8px; }
   .redesSociales h4 {
     display: none; }
@@ -678,15 +535,15 @@ footer {
     width: 170px;
     bottom: 100px;
     left: 30px; }
-  .home .fondo p {
+  .home .fondo p, .home .fondo .blog .articulos .articuloDos p, .blog .articulos .articuloDos .home .fondo p, .home .fondo .blog .articulos .articuloTres p, .blog .articulos .articuloTres .home .fondo p, .home .fondo .blog .articulos .articuloCuatro p, .blog .articulos .articuloCuatro .home .fondo p, .home .fondo .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .contenido .home .fondo p, .home .fondo .detalleCursos .colorimetria .calificaciones p, .detalleCursos .colorimetria .calificaciones .home .fondo p {
     font-size: 12px;
     width: 170px;
     bottom: 100px;
     left: 30px; }
   .home .presentacion {
     flex-direction: column; }
-    .home .presentacion img {
-      width: 50%; }
+    .home .presentacion img, .home .presentacion .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .home .presentacion img {
+      width: 70%; }
     .home .presentacion .bio {
       width: 90%; }
       .home .presentacion .bio h2 {
@@ -698,8 +555,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .galeria img {
-      width: 80%;
+    .galeria img, .galeria .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .galeria img {
+      width: 100%;
       justify-self: center; }
   /**quien soy**/
   .seccionUno {
@@ -717,20 +574,14 @@ footer {
       width: 100%; }
       .seccionUno .trabajos h2 {
         font-size: 18px; }
-      .seccionUno .trabajos img {
+      .seccionUno .trabajos img, .seccionUno .trabajos .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .seccionUno .trabajos img {
         height: 110px; }
-  .seccionDos h2 {
-    font-size: 18px; }
-  .seccionDos .certificaciones {
-    justify-content: space-around; }
-    .seccionDos .certificaciones .maquillajeSocial {
-      width: 20%; }
-    .seccionDos .certificaciones .maquillajeArtistico {
-      width: 20%; }
-    .seccionDos .certificaciones .maquillajeEditorial {
-      width: 20%; }
-    .seccionDos .certificaciones .peinado {
-      width: 20%; }
   /**blog**/
-  .categorias h2 {
-    font-size: 16px; } }
+  .blog .menu .busqueda input {
+    width: 320px;
+    height: 28px; }
+  .blog .articulos {
+    grid-template-areas: "articuloUno" "articuloDos" "articuloTres" "articuloCuatro";
+    width: 90%;
+    align-items: center;
+    justify-content: center; } }

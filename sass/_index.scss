@@ -15,12 +15,12 @@
             width: 450px;
         }
         p{
-            color: map-get($colores, letrasSecundarias);
+            color: map-get($colores, titulos);
             position: relative;
             bottom:300px;
             left: 100px;
             font-size: 25px;
-            font-family: map-get($fuentes, destacada);
+            font-family: map-get($fuentes, general);
         }
     }
     .presentacion{
@@ -58,7 +58,7 @@
         width: 100%;
         align-content: center;
         justify-content: center;
-        border-top: 6px dotted #982176;
+        border-top: 15px solid #07040b;
         img{
             width: 30%;
             margin: 5px;

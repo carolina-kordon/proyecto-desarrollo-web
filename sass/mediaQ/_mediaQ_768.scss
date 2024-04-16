@@ -1,6 +1,9 @@
 /**768px**/
 @media (max-width: 768px){
     /**estilos generales**/
+    p{
+        font-size: 10px;
+    }
     nav{
         .encabezado{
             h1{
@@ -70,39 +73,25 @@
         }
     }
     /**blog**/
-    .articuloUno{
-        h3{
-        font-size: 16px;
+    .blog{
+        grid-template-columns: 1fr;
+        .menu {
+            .busqueda input{
+                width: 650px;
+                height: 32px;
+            }
+            .categorias{
+                display: none;
+            }
         }
-        button img{
-            width: 65px;
+        .articulos .articuloUno{
+            h3{
+            font-size: 16px;
+            }
+            button{
+                height: 30px;
+                font-size: 11px;
+            }
         }
-    }
-    .articuloDos{
-        h3{
-        font-size: 16px;
-        }
-        button img{
-            width: 65px;
-        }
-    }
-    .articuloTres{
-        h3{
-        font-size: 16px;
-        }
-        button img{
-            width: 65px;
-        }
-    }
-    .articuloCuatro{
-        h3{
-        font-size: 16px;
-        }
-        button img{
-            width: 65px;
-        }
-    }
-    .categorias h2{
-        font-size: 16px;
     }
 }
