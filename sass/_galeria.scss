@@ -1,148 +1,123 @@
 /**galeria**/
-.galeriaPrincipal{
-    @include grid (repeat (6,200px), repeat (8,300px), center, center, "img1 img2 img3 img4 img4 img4"
-                                                                       "img5 img5 img5 img4 img4 img4" 
-                                                                       "img5 img5 img5 img6 img7 img8"
-                                                                       "img9 img9 img10 img10 img11 img11" 
-                                                                       "img12 img13 img14 img15 img16 img17" 
-                                                                       "img17 img18 img19 img20 img21 img22" 
-                                                                       "img23 img23 img24 img25 img26 img27" 
-                                                                       "img28 img29 img30 img31 img32 img33");
-    width: 100%;
-    .img1{
-        grid-area: img1;
-        object-fit: contain;
+.contenedorGaleria{
+    @include grid (repeat (6,1fr), repeat (24,1fr), center, center, 
+    "imagen-galeria1 imagen-galeria2 imagen-galeria3 imagen-galeria4 imagen-galeria4 imagen-galeria4"
+    "imagen-galeria5 imagen-galeria5 imagen-galeria5 imagen-galeria4 imagen-galeria4 imagen-galeria4"
+    "imagen-galeria5 imagen-galeria5 imagen-galeria5 imagen-galeria6 imagen-galeria6 imagen-galeria6"
+    "imagen-galeria7 imagen-galeria7 imagen-galeria8 imagen-galeria6 imagen-galeria6 imagen-galeria6"
+    "imagen-galeria9 imagen-galeria9 imagen-galeria9 imagen-galeria6 imagen-galeria6 imagen-galeria6"
+    "imagen-galeria9 imagen-galeria9 imagen-galeria9 imagen-galeria10 imagen-galeria10 imagen-galeria10"
+    "imagen-galeria9 imagen-galeria9 imagen-galeria9 imagen-galeria10 imagen-galeria10 imagen-galeria10"
+    "imagen-galeria11 imagen-galeria11 imagen-galeria11 imagen-galeria10 imagen-galeria10 imagen-galeria10"
+    "imagen-galeria11 imagen-galeria11 imagen-galeria11 imagen-galeria12 imagen-galeria13 imagen-galeria13"
+    "imagen-galeria14 imagen-galeria14 imagen-galeria14 imagen-galeria12 imagen-galeria13 imagen-galeria13"
+    "imagen-galeria14 imagen-galeria14 imagen-galeria14 imagen-galeria15 imagen-galeria15 imagen-galeria15"
+    "imagen-galeria16 imagen-galeria16 imagen-galeria16 imagen-galeria15 imagen-galeria15 imagen-galeria15"
+    "imagen-galeria16 imagen-galeria16 imagen-galeria16 imagen-galeria15 imagen-galeria15 imagen-galeria15"
+    "imagen-galeria17 imagen-galeria17 imagen-galeria18 imagen-galeria18 imagen-galeria19 imagen-galeria19"
+    "imagen-galeria17 imagen-galeria17 imagen-galeria18 imagen-galeria18 imagen-galeria19 imagen-galeria19"
+    "imagen-galeria20 imagen-galeria20 imagen-galeria21 imagen-galeria22 imagen-galeria23 imagen-galeria23"
+    "imagen-galeria20 imagen-galeria20 imagen-galeria21 imagen-galeria22 imagen-galeria23 imagen-galeria23"
+    "imagen-galeria24 imagen-galeria24 imagen-galeria24 imagen-galeria24 imagen-galeria24 imagen-galeria24"
+    "imagen-galeria24 imagen-galeria24 imagen-galeria24 imagen-galeria24 imagen-galeria24 imagen-galeria24"
+    "imagen-galeria25 imagen-galeria25 imagen-galeria25 imagen-galeria26 imagen-galeria26 imagen-galeria26"
+    "imagen-galeria25 imagen-galeria25 imagen-galeria25 imagen-galeria26 imagen-galeria26 imagen-galeria26"
+    "imagen-galeria25 imagen-galeria25 imagen-galeria25 imagen-galeria27 imagen-galeria27 imagen-galeria27"
+    "imagen-galeria28 imagen-galeria29 imagen-galeria29 imagen-galeria27 imagen-galeria27 imagen-galeria27"
+    "imagen-galeria28 imagen-galeria29 imagen-galeria29 imagen-galeria27 imagen-galeria27 imagen-galeria27"
+    "imagen-galeria30 imagen-galeria29 imagen-galeria29 imagen-galeria27 imagen-galeria27 imagen-galeria27");
+    width: 80%;
+    .imagen-galeria1{
+        grid-area: imagen-galeria1;
     }
-    .img2{
-        grid-area: img2;
-        object-fit: contain;
+    .imagen-galeria2{
+        grid-area: imagen-galeria2;
     }
-    .img3{
-        grid-area: img3;
-        object-fit: contain;
+    .imagen-galeria3{
+        grid-area: imagen-galeria3;
     }
-    .img4{
-        grid-area: img4;
-        object-fit: contain;
+    .imagen-galeria4{
+        grid-area: imagen-galeria4;
     }
-    .img5{
-        grid-area: img5;
-        object-fit: contain;
+    .imagen-galeria5{
+        grid-area: imagen-galeria5;
     }
-    .img6{
-        grid-area: img6;
-        object-fit: contain;
+    .imagen-galeria6{
+        grid-area: imagen-galeria6;
     }
-    .img7{
-        grid-area: img7;
-        object-fit: contain;
+    .imagen-galeria7{
+        grid-area: imagen-galeria7;
     }
-    .img8{
-        grid-area: img8;
-        object-fit: contain;
+    .imagen-galeria8{
+        grid-area: imagen-galeria8;
     }
-    .img9{
-        grid-area: img9;
-        object-fit: contain;
+    .imagen-galeria9{
+        grid-area: imagen-galeria9;
     }
-    .img10{
-        grid-area: img10;
-        object-fit: contain;
+    .imagen-galeria10{
+        grid-area: imagen-galeria10;
     }
-    .img11{
-        grid-area: img11;
-        object-fit: contain;
+    .imagen-galeria11{
+        grid-area: imagen-galeria11;
     }
-    .img12{
-        grid-area: img12;
-        object-fit: contain;
+    .imagen-galeria12{
+        grid-area: imagen-galeria12;
     }
-    .img13{
-        grid-area: img13;
-        object-fit: contain;
+    .imagen-galeria13{
+        grid-area: imagen-galeria13;
     }
-    .img14{
-        grid-area: img14;
-        object-fit: contain;
+    .imagen-galeria14{
+        grid-area: imagen-galeria14;
     }
-    .img15{
-        grid-area: img15;
-        object-fit: contain;
+    .imagen-galeria15{
+        grid-area: imagen-galeria15;
     }
-    .img16{
-        grid-area: img16;
-        object-fit: contain;
+    .imagen-galeria16{
+        grid-area: imagen-galeria16;
     }
-    .img17{
-        grid-area: img17;
-        object-fit: contain;
+    .imagen-galeria17{
+        grid-area: imagen-galeria17;
     }
-    .img18{
-        grid-area: img18;
-        object-fit: contain;
+    .imagen-galeria18{
+        grid-area: imagen-galeria18;
     }
-    .img19{
-        grid-area: img19;
-        object-fit: contain;
+    .imagen-galeria19{
+        grid-area: imagen-galeria19;
     }
-    .img20{
-        grid-area: img20;
-        object-fit: contain;
+    .imagen-galeria20{
+        grid-area: imagen-galeria20;
     }
-    .img21{
-        grid-area: img21;
-        object-fit: contain;
+    .imagen-galeria21{
+        grid-area: imagen-galeria21;
     }
-    .img22{
-        grid-area: img22;
-        object-fit: contain;
+    .imagen-galeria22{
+        grid-area: imagen-galeria22;
     }
-    .img23{
-        grid-area: img23;
-        object-fit: contain;
+    .imagen-galeria23{
+        grid-area: imagen-galeria23;
     }
-    .img23{
-        grid-area: img23;
-        object-fit: contain;
+    .imagen-galeria23{
+        grid-area: imagen-galeria23;
     }
-    .img24{
-        grid-area: img24;
-        object-fit: contain;
+    .imagen-galeria24{
+        grid-area: imagen-galeria24;
     }
-    .img25{
-        grid-area: img25;
-        object-fit: contain;
+    .imagen-galeria25{
+        grid-area: imagen-galeria25;
     }
-    .img26{
-        grid-area: img26;
-        object-fit: contain;
+    .imagen-galeria26{
+        grid-area: imagen-galeria26;
     }
-    .img27{
-        grid-area: img27;
-        object-fit: contain;
+    .imagen-galeria27{
+        grid-area: imagen-galeria27;
     }
-    .img28{
-        grid-area: img28;
-        object-fit: contain;
+    .imagen-galeria28{
+        grid-area: imagen-galeria28;
     }
-    .img29{
-        grid-area: img29;
-        object-fit: contain;
+    .imagen-galeria29{
+        grid-area: imagen-galeria29;
     }
-    .img30{
-        grid-area: img30;
-        object-fit: contain;
-    }
-    .img31{
-        grid-area: img31;
-        object-fit: contain;
-    }
-    .img32{
-        grid-area: img32;
-        object-fit: contain;
-    }
-    .img33{
-        grid-area: img33;
-        object-fit: contain;
+    .imagen-galeria30{
+        grid-area: imagen-galeria30;
     }
 }
