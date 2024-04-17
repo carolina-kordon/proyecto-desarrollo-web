@@ -1,15 +1,12 @@
 /**blog**/
 .blog{
-    display: grid;
+    @include grid (1fr 6fr, 1fr, center, top, none);
     width: 100%;
     grid-template-columns: 1fr 6fr;
     .menu{
         width: 100%;
         margin: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
+        @include flex (column, top, center, 20px);
         .busqueda{ 
             input{
             width: 100%;
@@ -51,11 +48,7 @@
     }
     .articulos{
         width: 100%;
-        display: grid;
-        grid-template-areas: 
-        "articuloUno articuloDos"
-        "articuloTres articuloCuatro";
-        justify-content: center;
+        @include grid (repeat (2, 1fr), repeat (2, 1fr), center, center, "articuloUno articuloDos" "articuloTres articuloCuatro");
         .articuloUno{
             width: 80%;
             background-color: #6c3156;

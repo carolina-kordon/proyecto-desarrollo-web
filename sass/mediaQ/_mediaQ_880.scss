@@ -1,5 +1,5 @@
-/**768px**/
-@media (max-width: 768px){
+/**880px**/
+@media (max-width: 880px){
     /**estilos generales**/
     p{
         font-size: 10px;
@@ -43,6 +43,7 @@
             }
         }    
         .presentacion{
+            gap: 25px;
             .bio{
                 h2{
                 font-size: 20px;
@@ -68,17 +69,17 @@
                 font-size: 22px;
             }
             img{
-                height: 140px;
+                height: 150px;
             }
         }
     }
     /**blog**/
     .blog{
         grid-template-columns: 1fr;
-        .menu {
+        .menu{
             .busqueda input{
-                width: 650px;
                 height: 32px;
+                width: 550px;
             }
             .categorias{
                 display: none;

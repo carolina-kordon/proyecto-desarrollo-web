@@ -1,23 +1,25 @@
 /**quien soy**/
 .seccionUno{
     background-image: linear-gradient(to left, black, #07040b, #36192f, #511a38, #6c3156);
-    display: flex;
+    @include flex (row, center, top, none);
     width: 100%;
     .descripcion{
         width: 35%;
         text-align: right;
-        margin: 10px;
+        margin-left: 25px;
+        margin-top: 10px;
         h2{
             font-family: map-get($fuentes, general);
-            color: map-get($colores, letrasSecundarias);
+            color: map-get($colores, titulos);
             font-size: 30px;
             text-align: left;
             padding: 5px;
         }
         ul{
             color: map-get($colores, letras);
-            padding: 15px;
+            padding-left: 10px;
             text-align: left;
+            margin-left: 10px;
             li{
                 padding: 8px;
                 font-size: 14px;
@@ -27,19 +29,20 @@
     }
     .trabajos{
         width: 65%;
-        text-align: right;
+        text-align: left;
+        margin-top: 12px;
         padding-right: 30px;
         padding-bottom: 15px;
         h2{
             font-family: map-get($fuentes, general);
-            color: map-get($colores, letrasSecundarias);
+            color: map-get($colores, titulos);
             font-size: 30px;
             text-align: left;
-            padding: 5px;
         }
         img{
             width: 30%;
             height: 250px;
+            margin-top: 15px;
             &:hover{
                 transform: scale(2,2);
             }

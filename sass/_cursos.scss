@@ -1,7 +1,6 @@
 /**cursos**/
 .detalleCursos{
-    display: flex;
-    justify-content: center;
+    @include flex (row, center, center, none);
     .automaquillaje{
         width: 38%;
         border: 2px solid map-get($colores, letras);
@@ -93,8 +92,7 @@
         font-size: 20px;
         color: map-get($colores, titulos);
         padding: 30px;
-        display: flex;
-        justify-content: center;
+        text-align: center;
     }
     .datos{
         input{

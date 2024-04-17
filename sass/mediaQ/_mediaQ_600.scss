@@ -1,0 +1,135 @@
+/**600px**/
+@media (max-width: 600px){
+/**estilos generales**/
+    header nav{
+        .encabezado{
+            padding: 10px;
+            flex-direction: column;
+            h1{
+                display: none;
+            }
+            li{
+                padding: 0;
+                a{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .redesSociales h4{
+        display: none;
+    }
+/**index**/
+    .home{
+        .fondo{
+            h1{
+                font-size: 25px;
+                width: 170px;
+                bottom: 100px;
+                left: 30px;
+            }
+            p{
+                font-size: 12px;
+                width: 170px;
+                bottom: 100px;
+                left: 30px;
+            }
+        }    
+        .presentacion{
+            flex-direction: column;
+            img{
+                width: 40%;
+            }
+            .bio{
+                width: 90%;
+                padding: 10px;
+                   margin-right:20px;
+                justify-content: center;
+                h2{
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 10px;
+                }
+            }
+        }
+        .galeria{
+            @include flex (column, center, center, none);
+            padding: 30px;
+            h2{
+                font-size: 28px;
+            }
+            img{
+                width: 70%;
+                justify-self: center;
+            }
+        }
+    }
+/**quien soy**/
+    .seccionUno{
+        @include flex (column, center, center, none);
+        width: 100%;
+        padding: 10px;
+        .descripcion{
+            width: 85%;
+            justify-content: center;
+            h2{
+                font-size: 18px;
+                text-align: center;
+            }
+            ul{
+                padding:0;
+                margin:0;
+                list-style: none;
+                text-align: center;
+                li{
+                    font-size: 10px;
+                    list-style: none;
+                }
+            }
+        }
+        .trabajos{
+            width: 85%;
+            justify-content: center;
+            padding: 0;
+            text-align: center;
+            h2{
+                font-size: 18px;
+                text-align: center;
+            }
+            img{
+                height: 140px;
+            }
+        }
+    }
+/**blog**/
+    .blog{
+        .menu .busqueda input{
+            height: 28px;
+            width: 400px;
+        }
+        .articulos{
+            @include grid (1fr, repeat (4, 1fr), center, center, "articuloUno" "articuloDos" "articuloTres" "articuloCuatro");
+            width: 90%;
+        }
+    }    
+}
+
+/*425px*/
+@media (max-width: 425px){
+/**quien soy**/
+    .seccionUno{
+        .trabajos img{
+            height: 110px;
+        }
+    }
+/*blog*/
+    .blog{
+        .menu .busqueda input{
+            width: 300px;
+            }
+        .articulos{
+            width: 100%;
+       }
+    }   
+}

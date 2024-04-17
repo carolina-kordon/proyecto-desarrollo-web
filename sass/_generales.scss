@@ -41,11 +41,9 @@ header{
             color: #FEECE2;
             padding: 35px;
             text-align: center;
-            display: flex;
-            justify-content: space-evenly;
+            @include flex (row, space-evenly, center, none);
             ul{
-                display: flex;
-                flex-wrap: nowrap;
+                @include flex (row, space-evenly, center, none);
                 li{
                     &:hover{
                         color: map-get($colores, hover);
