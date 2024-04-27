@@ -36,30 +36,27 @@ li{
 header{
     background-image: linear-gradient(to left, black, #07040b, #36192f, #511a38, #6c3156);
     width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
     nav{
         .encabezado{
             color: #FEECE2;
             padding: 35px;
             text-align: center;
             @include flex (row, space-evenly, center, none);
-            ul{
-                @include flex (row, space-evenly, center, none);
-                li{
-                    &:hover{
-                        color: map-get($colores, hover);
-                    }
-                    a{
-                        color: #FEECE2;
-                        &:hover{
-                            color: map-get($colores, hover);
-                        }
-                    }
+            li{
+                a{
+                    color: #FEECE2;
                 }
             }
         }
     }
 }
-
+/** estilos del main**/
+main{
+    padding-top: 100px;
+}
 /** estilos del footer **/
 footer{
     background-color: map-get($colores, fondo);

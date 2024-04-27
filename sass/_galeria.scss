@@ -1,123 +1,91 @@
 /**galeria**/
 .contenedorGaleria{
-    @include grid (repeat (6,1fr), repeat (24,1fr), center, center, 
-    "imagen-galeria1 imagen-galeria2 imagen-galeria3 imagen-galeria4 imagen-galeria4 imagen-galeria4"
-    "imagen-galeria5 imagen-galeria5 imagen-galeria5 imagen-galeria4 imagen-galeria4 imagen-galeria4"
-    "imagen-galeria5 imagen-galeria5 imagen-galeria5 imagen-galeria6 imagen-galeria6 imagen-galeria6"
-    "imagen-galeria7 imagen-galeria7 imagen-galeria8 imagen-galeria6 imagen-galeria6 imagen-galeria6"
-    "imagen-galeria9 imagen-galeria9 imagen-galeria9 imagen-galeria6 imagen-galeria6 imagen-galeria6"
-    "imagen-galeria9 imagen-galeria9 imagen-galeria9 imagen-galeria10 imagen-galeria10 imagen-galeria10"
-    "imagen-galeria9 imagen-galeria9 imagen-galeria9 imagen-galeria10 imagen-galeria10 imagen-galeria10"
-    "imagen-galeria11 imagen-galeria11 imagen-galeria11 imagen-galeria10 imagen-galeria10 imagen-galeria10"
-    "imagen-galeria11 imagen-galeria11 imagen-galeria11 imagen-galeria12 imagen-galeria13 imagen-galeria13"
-    "imagen-galeria14 imagen-galeria14 imagen-galeria14 imagen-galeria12 imagen-galeria13 imagen-galeria13"
-    "imagen-galeria14 imagen-galeria14 imagen-galeria14 imagen-galeria15 imagen-galeria15 imagen-galeria15"
-    "imagen-galeria16 imagen-galeria16 imagen-galeria16 imagen-galeria15 imagen-galeria15 imagen-galeria15"
-    "imagen-galeria16 imagen-galeria16 imagen-galeria16 imagen-galeria15 imagen-galeria15 imagen-galeria15"
-    "imagen-galeria17 imagen-galeria17 imagen-galeria18 imagen-galeria18 imagen-galeria19 imagen-galeria19"
-    "imagen-galeria17 imagen-galeria17 imagen-galeria18 imagen-galeria18 imagen-galeria19 imagen-galeria19"
-    "imagen-galeria20 imagen-galeria20 imagen-galeria21 imagen-galeria22 imagen-galeria23 imagen-galeria23"
-    "imagen-galeria20 imagen-galeria20 imagen-galeria21 imagen-galeria22 imagen-galeria23 imagen-galeria23"
-    "imagen-galeria24 imagen-galeria24 imagen-galeria24 imagen-galeria24 imagen-galeria24 imagen-galeria24"
-    "imagen-galeria24 imagen-galeria24 imagen-galeria24 imagen-galeria24 imagen-galeria24 imagen-galeria24"
-    "imagen-galeria25 imagen-galeria25 imagen-galeria25 imagen-galeria26 imagen-galeria26 imagen-galeria26"
-    "imagen-galeria25 imagen-galeria25 imagen-galeria25 imagen-galeria26 imagen-galeria26 imagen-galeria26"
-    "imagen-galeria25 imagen-galeria25 imagen-galeria25 imagen-galeria27 imagen-galeria27 imagen-galeria27"
-    "imagen-galeria28 imagen-galeria29 imagen-galeria29 imagen-galeria27 imagen-galeria27 imagen-galeria27"
-    "imagen-galeria28 imagen-galeria29 imagen-galeria29 imagen-galeria27 imagen-galeria27 imagen-galeria27"
-    "imagen-galeria30 imagen-galeria29 imagen-galeria29 imagen-galeria27 imagen-galeria27 imagen-galeria27");
-    width: 80%;
-    .imagen-galeria1{
-        grid-area: imagen-galeria1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 300px;
+    padding: 40px;
+    gap: 20px;
+    .galeria_item:nth-child(4){
+        grid-row-start: span 2;
+        grid-column-start: span 2;
     }
-    .imagen-galeria2{
-        grid-area: imagen-galeria2;
+    .galeria_item:nth-child(5){
+        grid-row-start: span 2;
+        grid-column-start: span 3;
     }
-    .imagen-galeria3{
-        grid-area: imagen-galeria3;
+    .galeria_item:nth-child(8){
+        grid-row-start: span 2;
+        grid-column-start: span 2;
     }
-    .imagen-galeria4{
-        grid-area: imagen-galeria4;
+    .galeria_item:nth-child(9){
+        grid-row-start: span 2;
+        grid-column-start: span 3;
     }
-    .imagen-galeria5{
-        grid-area: imagen-galeria5;
+    .galeria_item:nth-child(10){
+        grid-row-start: span 2;
     }
-    .imagen-galeria6{
-        grid-area: imagen-galeria6;
+    .galeria_item:nth-child(13){
+        grid-row-start: span 3;
+        grid-column-start: span 2;
     }
-    .imagen-galeria7{
-        grid-area: imagen-galeria7;
+    .galeria_item:nth-child(14){
+        grid-column-start: span 2;
     }
-    .imagen-galeria8{
-        grid-area: imagen-galeria8;
+    .galeria_item:nth-child(15){
+        grid-row-start: span 3;
+        grid-column-start: span 2;
     }
-    .imagen-galeria9{
-        grid-area: imagen-galeria9;
+    .galeria_item:nth-child(16){
+        grid-row-start: span 3;
+        grid-column-start: span 3;
     }
-    .imagen-galeria10{
-        grid-area: imagen-galeria10;
+    .galeria_item:nth-child(17){
+        grid-row-start: span 3;
+        grid-column-start: span 2;
     }
-    .imagen-galeria11{
-        grid-area: imagen-galeria11;
+    .galeria_item:nth-child(21){
+        grid-column-start: span 3;
     }
-    .imagen-galeria12{
-        grid-area: imagen-galeria12;
+    .galeria_item:nth-child(22){
+        grid-row-start: span 3;
+        grid-column-start: span 5;
     }
-    .imagen-galeria13{
-        grid-area: imagen-galeria13;
+    .galeria_item:nth-child(23){
+        grid-row-start: span 3;
+        grid-column-start: span 2;
     }
-    .imagen-galeria14{
-        grid-area: imagen-galeria14;
+    .galeria_item:nth-child(24){
+        grid-row-start: span 3;
+        grid-column-start: span 3;
     }
-    .imagen-galeria15{
-        grid-area: imagen-galeria15;
+    .galeria_item:nth-child(25){
+        grid-row-start: span 3;
+        grid-column-start: span 5;
     }
-    .imagen-galeria16{
-        grid-area: imagen-galeria16;
+    .galeria_item:nth-child(26){
+        grid-row-start: span 3;
+        grid-column-start: span 3;
     }
-    .imagen-galeria17{
-        grid-area: imagen-galeria17;
+    .galeria_item:nth-child(27){
+        grid-column-start: span 2;
     }
-    .imagen-galeria18{
-        grid-area: imagen-galeria18;
+    .galeria_item:nth-child(28){
+        grid-column-start: span 2;
     }
-    .imagen-galeria19{
-        grid-area: imagen-galeria19;
+    .galeria_item:nth-child(29){
+        grid-column-start: span 2;
     }
-    .imagen-galeria20{
-        grid-area: imagen-galeria20;
+    .galeria_item:nth-child(30){
+        grid-column-start: span 5;
+        grid-row-start: span 3;
     }
-    .imagen-galeria21{
-        grid-area: imagen-galeria21;
-    }
-    .imagen-galeria22{
-        grid-area: imagen-galeria22;
-    }
-    .imagen-galeria23{
-        grid-area: imagen-galeria23;
-    }
-    .imagen-galeria23{
-        grid-area: imagen-galeria23;
-    }
-    .imagen-galeria24{
-        grid-area: imagen-galeria24;
-    }
-    .imagen-galeria25{
-        grid-area: imagen-galeria25;
-    }
-    .imagen-galeria26{
-        grid-area: imagen-galeria26;
-    }
-    .imagen-galeria27{
-        grid-area: imagen-galeria27;
-    }
-    .imagen-galeria28{
-        grid-area: imagen-galeria28;
-    }
-    .imagen-galeria29{
-        grid-area: imagen-galeria29;
-    }
-    .imagen-galeria30{
-        grid-area: imagen-galeria30;
+    .img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.3s ease all;
+        &:active{
+            transform: scale(1.2);
+        }
     }
 }

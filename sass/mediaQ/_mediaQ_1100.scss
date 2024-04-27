@@ -74,4 +74,10 @@
             }
         }
     }
+    /*galeria*/
+    .contenedorGaleria{
+        grid-auto-rows: 200px;
+        padding: 30px;
+        gap: 15px;
+    }
 }

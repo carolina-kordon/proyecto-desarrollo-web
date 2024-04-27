@@ -49,6 +49,9 @@
     .articulos{
         width: 100%;
         @include grid (repeat (2, 1fr), repeat (2, 1fr), center, center, "articuloUno articuloDos" "articuloTres articuloCuatro");
+        .imagenArticulo img{
+            object-fit: contain;
+        }
         .articuloUno{
             width: 80%;
             background-color: #6c3156;

@@ -24,23 +24,28 @@
         }
     }
     .presentacion{
-        @include flex (row, center, center, 40px);
+        @include flex (row, center, bottom, 40px);
         img{
             width: 30%;
             margin-left: 15px;
+            padding-bottom: 10px;
         }
         .bio{
             width: 50%;
             @include flex (column, center, center, none);
+            border: 3px solid map-get($colores, fondo);
+            padding: 10px;
+            margin-bottom: 10px;
             h2{
                 padding: 5px 5px 15px 5px;
-                color:#07040b;
+                color:map-get($colores, titulos);
                 font-size: 30px;
                 text-align: center;
             }
             p{
+                font-size: 18px;
                 text-align: justify;
-                color:map-get($colores, letras);
+                color: #f5bdf0d8;
                 margin: 5px 15px;
             }            
         }
