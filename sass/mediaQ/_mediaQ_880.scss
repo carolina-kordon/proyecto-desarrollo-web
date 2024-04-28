@@ -79,9 +79,29 @@
             }
         }
     }
+    /*cursos*/
+    .cursos{
+        .detalleCursos .infoCursos{
+            .contenido h3{
+                font-size: 18px;
+            }
+            button a{
+                font-size: 12px;
+            }
+        }
+        .formularioCursos{
+            h3{
+                padding: 20px;
+                font-size: 18px;
+            }
+            button a{
+                font-size: 12px;
+            }
+        }
+    }
 }
-/*770px*/
-@media(max-width: 770px){
+/*800px*/
+@media(max-width: 800px){
     /*index*/
     .home{
         .presentacion .bio{
@@ -116,5 +136,16 @@
                 font-size: 12px;
             }
         }
+    }
+    /*cursos*/
+    .cursos .detalleCursos{
+        flex-direction: column;
+        .infoCursos{
+            width: 70%;
+        }
+    }
+    /*galeria*/
+    .contenedorGaleria{
+       grid-auto-rows: 180px;
     }
 }

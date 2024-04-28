@@ -74,6 +74,27 @@
             }
         }
     }
+    /*cursos*/
+    .cursos{
+        .detalleCursos .infoCursos{
+            .contenido{
+                h3{
+                    font-size: 20px;
+                }
+            }
+            button a{
+                font-size: 14px;
+            }
+        }
+        .formularioCursos{
+            h3{
+                font-size: 20px;
+            }
+            button a{
+                font-size: 14px;
+            }
+        }
+    }
     /*galeria*/
     .contenedorGaleria{
         grid-auto-rows: 200px;

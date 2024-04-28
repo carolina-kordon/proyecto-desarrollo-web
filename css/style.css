@@ -263,7 +263,9 @@ footer {
         color: #f5b3ef94;
         padding: 15px 0px;
         text-align: justify;
-        height: 25%; }
+        height: 20%; }
+      .blog .articulos .articulosSuperiores .etiquetas, .blog .articulos .articulosInferiores .etiquetas {
+        height: 5%; }
       .blog .articulos .articulosSuperiores button, .blog .articulos .articulosInferiores button {
         width: 50%;
         background-color: #6c315688;
@@ -304,29 +306,39 @@ footer {
     gap: none;
     width: 90%; }
     .cursos .detalleCursos .infoCursos {
-      width: 38%;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: auto;
+      gap: none;
+      width: 40%;
       border: 2px solid #f5b3ef94;
       border-radius: 5px;
       margin: 30px; }
-      .cursos .detalleCursos .infoCursos .contenido img {
-        padding-left: 20px;
-        padding-top: 20px;
-        padding-right: 20px; }
-      .cursos .detalleCursos .infoCursos .contenido h3 {
-        font-size: 24px;
-        text-align: center;
-        width: 55%;
-        color: #07040b;
-        background-color: #f5b3ef94;
-        margin-left: 190px;
-        border-radius: 5px;
-        border: 1px solid #07040b;
-        padding: 5px 10px; }
-      .cursos .detalleCursos .infoCursos .contenido p {
-        color: #f5b3ef94;
-        padding-left: 20px;
-        padding-bottom: 20px;
-        padding-top: 10px; }
+      .cursos .detalleCursos .infoCursos .contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: auto;
+        gap: none; }
+        .cursos .detalleCursos .infoCursos .contenido img {
+          object-fit: cover;
+          padding: 15px;
+          width: 100%; }
+        .cursos .detalleCursos .infoCursos .contenido h3 {
+          font-size: 24px;
+          text-align: center;
+          width: 55%;
+          color: #07040b;
+          background-color: #f5b3ef94;
+          margin-left: 15px;
+          border-radius: 5px;
+          padding: 5px 10px; }
+        .cursos .detalleCursos .infoCursos .contenido p {
+          color: #f5b3ef94;
+          padding-left: 20px;
+          padding-bottom: 20px;
+          padding-top: 10px; }
       .cursos .detalleCursos .infoCursos .calificaciones {
         margin-left: 20px;
         padding-bottom: 10px; }
@@ -351,13 +363,12 @@ footer {
     justify-content: center;
     align-items: center;
     gap: none;
-    margin: 10px 10px 10px 110px;
     background-color: #07040b;
-    width: 85%;
+    width: 80%;
     border: 2px solid #36192f;
     justify-content: center; }
     .cursos .formularioCursos h3, .cursos .formularioCursos .blog .articulos .articulosInferiores h3, .blog .articulos .articulosInferiores .cursos .formularioCursos h3 {
-      font-size: 20px;
+      font-size: 24px;
       color: #c02995;
       padding: 30px;
       text-align: center; }
@@ -524,6 +535,15 @@ footer {
     .blog .articulos .articulosSuperiores button, .blog .articulos .articulosInferiores button {
       height: 35px;
       font-size: 13px; }
+  /*cursos*/
+  .cursos .detalleCursos .infoCursos .contenido h3 {
+    font-size: 20px; }
+  .cursos .detalleCursos .infoCursos button a {
+    font-size: 14px; }
+  .cursos .formularioCursos h3, .cursos .formularioCursos .blog .articulos .articulosInferiores h3, .blog .articulos .articulosInferiores .cursos .formularioCursos h3 {
+    font-size: 20px; }
+  .cursos .formularioCursos button a, .cursos .formularioCursos .blog .articulos .articulosInferiores button a, .blog .articulos .articulosInferiores .cursos .formularioCursos button a {
+    font-size: 14px; }
   /*galeria*/
   .contenedorGaleria {
     grid-auto-rows: 200px;
@@ -603,10 +623,20 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto repeat(3, 126px); }
     .seccionUno .trabajos h2 {
-      font-size: 22px; } }
+      font-size: 22px; }
+  /*cursos*/
+  .cursos .detalleCursos .infoCursos .contenido h3 {
+    font-size: 18px; }
+  .cursos .detalleCursos .infoCursos button a {
+    font-size: 12px; }
+  .cursos .formularioCursos h3, .cursos .formularioCursos .blog .articulos .articulosInferiores h3, .blog .articulos .articulosInferiores .cursos .formularioCursos h3 {
+    padding: 20px;
+    font-size: 18px; }
+  .cursos .formularioCursos button a, .cursos .formularioCursos .blog .articulos .articulosInferiores button a, .blog .articulos .articulosInferiores .cursos .formularioCursos button a {
+    font-size: 12px; } }
 
-/*770px*/
-@media (max-width: 770px) {
+/*800px*/
+@media (max-width: 800px) {
   /*index*/
   .home .presentacion .bio h2 {
     font-size: 18px; }
@@ -624,7 +654,15 @@ footer {
     font-size: 11px; }
   .blog .articulos .articulosSuperiores button, .blog .articulos .articulosInferiores button {
     height: 40px;
-    font-size: 12px; } }
+    font-size: 12px; }
+  /*cursos*/
+  .cursos .detalleCursos {
+    flex-direction: column; }
+    .cursos .detalleCursos .infoCursos {
+      width: 70%; }
+  /*galeria*/
+  .contenedorGaleria {
+    grid-auto-rows: 180px; } }
 
 /**600px**/
 @media (max-width: 600px) {
@@ -720,7 +758,17 @@ footer {
       height: 8%; }
     .blog .articulos .articulosSuperiores p, .blog .articulos .articulosInferiores p {
       height: 20%;
-      font-size: 12px; } }
+      font-size: 12px; }
+  /*cursos*/
+  .cursos .detalleCursos .infoCursos .contenido h3 {
+    font-size: 16px; }
+  .cursos .formularioCursos h3, .cursos .formularioCursos .blog .articulos .articulosInferiores h3, .blog .articulos .articulosInferiores .cursos .formularioCursos h3 {
+    font-size: 16px; }
+  .cursos .formularioCursos button, .cursos .formularioCursos .blog .articulos .articulosInferiores button, .blog .articulos .articulosInferiores .cursos .formularioCursos button {
+    width: 20%; }
+  /*galeria*/
+  .contenedorGaleria {
+    grid-auto-rows: 130px; } }
 
 /*425px*/
 @media (max-width: 425px) {
@@ -740,4 +788,82 @@ footer {
       height: 22px;
       width: 90%; }
   .blog .articulos {
-    width: 100%; } }
+    width: 100%; }
+  /*cursos*/
+  .cursos .formularioCursos h3, .cursos .formularioCursos .blog .articulos .articulosInferiores h3, .blog .articulos .articulosInferiores .cursos .formularioCursos h3 {
+    font-size: 14px; }
+  .cursos .formularioCursos .datos input {
+    width: 80%; }
+  .cursos .formularioCursos .mensaje input {
+    width: 80%; }
+  /*galeria*/
+  .contenedorGaleria {
+    grid-template-columns: repeat(3, 100px);
+    grid-auto-rows: 100px; }
+    .contenedorGaleria .galeria_item:nth-child(4) {
+      grid-row-start: span 3;
+      grid-column-start: span 3; }
+    .contenedorGaleria .galeria_item:nth-child(5) {
+      grid-row-start: span 2;
+      grid-column-start: span 3; }
+    .contenedorGaleria .galeria_item:nth-child(6) {
+      grid-column-start: 1; }
+    .contenedorGaleria .galeria_item:nth-child(7) {
+      grid-column-start: 2; }
+    .contenedorGaleria .galeria_item:nth-child(8) {
+      grid-column-start: 3;
+      grid-row-start: span 1; }
+    .contenedorGaleria .galeria_item:nth-child(9) {
+      grid-row-start: span 2;
+      grid-column-start: span 3; }
+    .contenedorGaleria .galeria_item:nth-child(10) {
+      grid-column-start: 1;
+      grid-row-start: span 1; }
+    .contenedorGaleria .galeria_item:nth-child(11) {
+      grid-column-start: 2; }
+    .contenedorGaleria .galeria_item:nth-child(12) {
+      grid-column-start: 3; }
+    .contenedorGaleria .galeria_item:nth-child(13) {
+      grid-row-start: span 3;
+      grid-column-start: span 3; }
+    .contenedorGaleria .galeria_item:nth-child(14) {
+      grid-column-start: span 3;
+      grid-row-start: span 2; }
+    .contenedorGaleria .galeria_item:nth-child(15) {
+      grid-row-start: span 4;
+      grid-column-start: span 3; }
+    .contenedorGaleria .galeria_item:nth-child(16) {
+      grid-row-start: span 3;
+      grid-column-start: span 3; }
+    .contenedorGaleria .galeria_item:nth-child(17) {
+      grid-row-start: span 4;
+      grid-column-start: span 3; }
+    .contenedorGaleria .galeria_item:nth-child(21) {
+      grid-column-start: span 3; }
+    .contenedorGaleria .galeria_item:nth-child(22) {
+      grid-row-start: span 2;
+      grid-column-start: span 3; }
+    .contenedorGaleria .galeria_item:nth-child(23) {
+      grid-row-start: span 2;
+      grid-column-start: 1; }
+    .contenedorGaleria .galeria_item:nth-child(24) {
+      grid-row-start: span 2;
+      grid-column-start: span 2; }
+    .contenedorGaleria .galeria_item:nth-child(25) {
+      grid-row-start: span 2;
+      grid-column-start: span 3; }
+    .contenedorGaleria .galeria_item:nth-child(26) {
+      grid-row-start: span 4;
+      grid-column-start: span 3; }
+    .contenedorGaleria .galeria_item:nth-child(27) {
+      grid-column-start: span 3;
+      grid-row-start: span 2; }
+    .contenedorGaleria .galeria_item:nth-child(28) {
+      grid-column-start: span 3;
+      grid-row-start: span 2; }
+    .contenedorGaleria .galeria_item:nth-child(29) {
+      grid-column-start: span 3;
+      grid-row-start: span 2; }
+    .contenedorGaleria .galeria_item:nth-child(30) {
+      grid-column-start: span 3;
+      grid-row-start: span 4; } }

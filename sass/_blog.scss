@@ -57,7 +57,10 @@
                 color: map-get($colores, letras);
                 padding: 15px 0px;
                 text-align: justify;
-                height: 25%;
+                height: 20%;
+            }
+            .etiquetas{
+                height: 5%;
             }
             button{
                 width: 50%;

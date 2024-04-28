@@ -6,15 +6,17 @@
         @include flex (row, center, center, none);
         width: 90%;
         .infoCursos{
-            width: 38%;
+            @include flex (column, left, auto, none);
+            width: 40%;
             border: 2px solid map-get($colores, letras);
             border-radius: 5px;
             margin: 30px;
-            .contenido{ 
+            .contenido{
+                @include flex (column, center, auto, none);
                 img{
-                padding-left: 20px;
-                padding-top: 20px;
-                padding-right: 20px;
+                    object-fit: cover;
+                    padding: 15px;
+                    width: 100%;
                 }
                 h3{
                     font-size: 24px;
@@ -22,9 +24,8 @@
                     width: 55%;
                     color: map-get($colores, fondo);
                     background-color: map-get($colores, letras);
-                    margin-left: 190px;
+                    margin-left: 15px;
                     border-radius: 5px;
-                    border: 1px solid map-get($colores, fondo);
                     padding: 5px 10px;
                 }
                 p{
@@ -61,13 +62,12 @@
     }
     .formularioCursos{
         @include flex (column, center, center, none);
-        margin: 10px 10px 10px 110px;
         background-color: map-get($colores, fondo);
-        width: 85%;
+        width: 80%;
         border: 2px solid map-get($colores, letrasSecundarias);
         justify-content: center;
         h3{
-            font-size: 20px;
+            font-size: 24px;
             color: map-get($colores, titulos);
             padding: 30px;
             text-align: center;
