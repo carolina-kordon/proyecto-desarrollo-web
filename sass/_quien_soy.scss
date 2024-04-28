@@ -24,10 +24,19 @@
                 padding: 8px;
                 font-size: 14px;
                 list-style-type: disc;
+                a{
+                    color: map-get($colores, letras);
+                    font-size: 14px;
+                    &:hover{
+                        color: map-get($colores, titulos);
+                    }
+                }
             }
         }
     }
     .trabajos{
+        @include grid (repeat(3, 250px), auto repeat(3, 250px), center, center);
+        gap: 15px;
         width: 65%;
         text-align: left;
         margin-top: 12px;
@@ -38,11 +47,11 @@
             color: map-get($colores, titulos);
             font-size: 30px;
             text-align: left;
+            grid-column-start: span 3;
         }
         img{
-            width: 30%;
-            height: 250px;
-            margin-top: 15px;
+            width: 100%;
+            object-fit: cover;
             transition: 0.3s ease all;
             &:hover{
                 transform: scale(1.2);

@@ -1,7 +1,6 @@
 /**galeria**/
 .contenedorGaleria{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    @include grid (repeat(5, 1fr), none, center, center);
     grid-auto-rows: 300px;
     padding: 40px;
     gap: 20px;

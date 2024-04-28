@@ -1,9 +1,6 @@
 /**880px**/
 @media (max-width: 880px){
     /**estilos generales**/
-    p{
-        font-size: 10px;
-    }
     nav{
         .encabezado{
             h1{
@@ -49,8 +46,15 @@
                 font-size: 20px;
                 }
                 p{
-                font-size: 10px;
+                font-size: 12px;
                 }
+            }
+        }
+        .galeria{
+            grid-template-rows: auto 200px;
+            border-top: 10px solid #07040b;
+            h2{
+                font-size: 35px;
             }
         }
     }    
@@ -62,36 +66,54 @@
             }
             ul li{
                 font-size: 12px;
+                a{
+                    font-size: 12px;
+                }
             }
         }
         .trabajos{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto repeat(3,126px);
             h2{
                 font-size: 22px;
             }
-            img{
-                height: 150px;
-            }
         }
     }
-    /**blog**/
-    .blog{
-        grid-template-columns: 1fr;
-        .menu{
-            .busqueda input{
-                height: 32px;
-                width: 550px;
+}
+/*770px*/
+@media(max-width: 770px){
+    /*index*/
+    .home{
+        .presentacion .bio{
+            h2{
+                font-size: 18px;
             }
-            .categorias{
-                display: none;
+            p{
+                font-size: 11px;
             }
         }
-        .articulos .articuloUno{
+        .galeria{
+            grid-template-rows: auto 180px;
+        }    
+    }
+    /*quien soy*/
+    .seccionUno{
+        .trabajos{
+            grid-template-rows: auto repeat(3,105px);
+        }
+    }
+    /*blog*/
+    .blog{
+        .articulos .articulosSuperiores{
             h3{
-            font-size: 16px;
+                font-size: 16px;
+            }
+            p{
+                font-size: 11px;
             }
             button{
-                height: 30px;
-                font-size: 11px;
+                height: 40px;
+                font-size: 12px;
             }
         }
     }

@@ -18,17 +18,23 @@
                 left: 75px;
             }
             p{
-                font-size: 18px;
+                font-size: 16px;
                 width: 300px;
                 bottom: 200px;
                 left: 75px;
             }
         }
-       .presentacion img{
-            margin: 20px;
+       .presentacion{
+            justify-content: center;
+            .bio p{
+                font-size: 16px;
+            }
+            img{
+                margin: 20px;
+            }
         }
-        .galeria img{
-            width: 28%;
+        .galeria{
+            grid-template-rows: auto 250px;
         }
     }
     /**quien soy**/
@@ -37,9 +43,8 @@
             font-size: 26px;
         }
         .trabajos{
-            img{
-                height: 200px
-            }
+            grid-template-columns: repeat(3,200px);
+            grid-template-rows: auto repeat(3,200px);
             h2{
                 font-size: 26px;
             }
@@ -51,22 +56,17 @@
             .busqueda input{
                 height: 36px;
             }
-            .categorias{
-                padding: 15px;
-                h2{
-                    font-size: 18px;
-                }
-                ul li{
-                    font-size: 10px;
-                }
-            }    
         }
-        .articulos .articuloUno{
+        .articulos .articulosSuperiores{
+            width: 80%;
             img{
                 height: 200px;
             }
             h3{
                 font-size: 18px;
+            }
+            p{
+                font-size: 12px;
             }
             button{
                 height: 35px;
@@ -79,5 +79,44 @@
         grid-auto-rows: 200px;
         padding: 30px;
         gap: 15px;
+    }
+}
+/*960px*/
+@media (max-width: 960px){
+    /*index*/
+    .home .presentacion{
+        .bio{
+            h2{
+                font-size: 25px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    /*quien soy*/
+    .seccionUno{
+        gap: 30px;
+        align-items: top;
+        .descripcion{
+            width: 45%;
+        }
+        .trabajos{
+            margin: 15px;
+            width: 55%;
+            grid-template-columns: repeat(3,160px);
+            grid-template-rows: auto repeat(3,160px);
+        }
+    }
+    /*blog*/
+    .blog{
+        .articulos .articulosSuperiores{
+            width: 100%;
+            gap: 30px;
+            img{
+                width: 100%;
+                padding: 10px;
+            }
+        }
     }
 }

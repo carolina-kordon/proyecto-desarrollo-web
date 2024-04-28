@@ -23,13 +23,13 @@ h4 {
   display: inline;
   font-size: 20px; }
 
-a, .detalleCursos .colorimetria .blog .articulos .articuloDos button a, .blog .articulos .articuloDos .detalleCursos .colorimetria button a, .detalleCursos .colorimetria .blog .articulos .articuloTres button a, .blog .articulos .articuloTres .detalleCursos .colorimetria button a, .detalleCursos .colorimetria .blog .articulos .articuloCuatro button a, .blog .articulos .articuloCuatro .detalleCursos .colorimetria button a, .detalleCursos .colorimetria button a {
+a {
   font-size: 16px;
   text-decoration: none;
   font-family: "Platypi";
   color: #FEECE2; }
 
-p, .blog .articulos .articuloDos p, .blog .articulos .articuloTres p, .blog .articulos .articuloCuatro p, .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .calificaciones p {
+p, .blog .articulos .articulosInferiores p {
   font-size: 14px; }
 
 li {
@@ -53,7 +53,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     gap: none; }
-    header nav .encabezado li a, header nav .encabezado li .detalleCursos .colorimetria button a, .detalleCursos .colorimetria button header nav .encabezado li a {
+    header nav .encabezado li a {
       color: #FEECE2; }
 
 /** estilos del main**/
@@ -67,7 +67,7 @@ footer {
   padding: 15px; }
   footer .redesSociales h4 {
     margin: 0px 20px; }
-  footer .redesSociales a, footer .redesSociales .detalleCursos .colorimetria button a, .detalleCursos .colorimetria button footer .redesSociales a {
+  footer .redesSociales a {
     margin: 0px 20px; }
 
 /*secciones*/
@@ -75,7 +75,7 @@ footer {
 .home {
   width: 100%;
   background-image: linear-gradient(to right, black, #07040b, #36192f, #511a38, #6c3156); }
-  .home .fondo img, .home .fondo .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .home .fondo img {
+  .home .fondo img {
     width: 100%; }
   .home .fondo h1 {
     color: #982176;
@@ -84,7 +84,7 @@ footer {
     left: 100px;
     font-size: 70px;
     width: 450px; }
-  .home .fondo p, .home .fondo .blog .articulos .articuloDos p, .blog .articulos .articuloDos .home .fondo p, .home .fondo .blog .articulos .articuloTres p, .blog .articulos .articuloTres .home .fondo p, .home .fondo .blog .articulos .articuloCuatro p, .blog .articulos .articuloCuatro .home .fondo p, .home .fondo .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .contenido .home .fondo p, .home .fondo .detalleCursos .colorimetria .calificaciones p, .detalleCursos .colorimetria .calificaciones .home .fondo p {
+  .home .fondo p, .home .fondo .blog .articulos .articulosInferiores p, .blog .articulos .articulosInferiores .home .fondo p {
     color: #c02995;
     position: relative;
     bottom: 300px;
@@ -94,12 +94,12 @@ footer {
   .home .presentacion {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: bottom;
     gap: 40px; }
-    .home .presentacion img, .home .presentacion .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .home .presentacion img {
+    .home .presentacion img {
       width: 30%;
-      margin-left: 15px;
+      margin-left: 35px;
       padding-bottom: 10px; }
     .home .presentacion .bio {
       width: 50%;
@@ -108,9 +108,9 @@ footer {
       justify-content: center;
       align-items: center;
       gap: none;
-      border: 3px solid #07040b;
+      box-shadow: 2px 3px 8px #07040b;
       padding: 10px;
-      margin-bottom: 10px; }
+      margin: 10px 30px; }
       .home .presentacion .bio h2 {
         padding: 5px 5px 15px 5px;
         color: #c02995;
@@ -122,17 +122,27 @@ footer {
         color: #f5bdf0d8;
         margin: 5px 15px; }
   .home .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 340px;
+    justify-content: center;
+    align-content: center;
     background-color: linear-gradient(to right, black, #07040b, #36192f, #511a38, #6c3156);
-    padding: 30px 50px 30px 100px;
+    padding: 10px 50px 10px 50px;
     width: 100%;
-    border-top: 15px solid #07040b; }
-    .home .galeria img, .home .galeria .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .home .galeria img {
-      width: 30%;
-      margin: 5px; }
+    border-top: 15px solid #07040b;
+    gap: 30px; }
     .home .galeria h2 {
       text-align: center;
       color: #f5b3ef94;
-      font-size: 40px; }
+      padding: 15px;
+      font-size: 40px;
+      grid-column-start: span 3; }
+    .home .galeria .imagenGaleria {
+      overflow: hidden; }
+      .home .galeria .imagenGaleria img {
+        width: 100%;
+        object-fit: cover; }
 
 /**quien soy**/
 .seccionUno {
@@ -163,7 +173,18 @@ footer {
         padding: 8px;
         font-size: 14px;
         list-style-type: disc; }
+        .seccionUno .descripcion ul li a {
+          color: #f5b3ef94;
+          font-size: 14px; }
+          .seccionUno .descripcion ul li a:hover {
+            color: #c02995; }
   .seccionUno .trabajos {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: auto repeat(3, 250px);
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
     width: 65%;
     text-align: left;
     margin-top: 12px;
@@ -173,96 +194,77 @@ footer {
       font-family: "Platypi";
       color: #c02995;
       font-size: 30px;
-      text-align: left; }
-    .seccionUno .trabajos img, .seccionUno .trabajos .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .seccionUno .trabajos img {
-      width: 30%;
-      height: 250px;
-      margin-top: 15px;
+      text-align: left;
+      grid-column-start: span 3; }
+    .seccionUno .trabajos img {
+      width: 100%;
+      object-fit: cover;
       transition: 0.3s ease all; }
       .seccionUno .trabajos img:hover {
         transform: scale(1.2); }
 
 /**blog**/
 .blog {
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: top;
-  grid-template-areas: none;
-  width: 100%;
-  grid-template-columns: 1fr 6fr; }
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  width: 100%; }
   .blog .menu {
-    width: 100%;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-    align-items: center;
-    gap: 20px; }
+    width: 85%;
+    margin: 20px; }
     .blog .menu .busqueda input {
-      width: 100%;
+      color: #f5b3ef94;
+      width: 90%;
       height: 40px;
       border: 2px solid #f5b3ef94;
       border-radius: 20px;
       margin-top: 25px;
-      background-color: #07040b; }
+      background-color: #07040b;
+      text-align: center;
+      font-family: "Platypi"; }
     .blog .menu .busqueda p {
       color: #f5b3ef94;
       margin-right: 15px;
       font-size: 15px; }
-    .blog .menu .categorias {
-      text-align: center;
-      padding: 20px;
-      width: 100%;
-      background-color: #c0299570;
-      border-radius: 10px;
-      margin-right: 15px; }
-      .blog .menu .categorias h2 {
-        font-family: "Platypi";
-        color: #FEECE2;
-        font-size: 24px;
-        border-bottom: 1px solid #07040b;
-        padding-bottom: 10px;
-        margin: 5px; }
-      .blog .menu .categorias ul li {
-        color: #feece288;
-        border-bottom: 1px solid #07040b;
-        padding-bottom: 10px;
-        margin: 5px;
-        font-size: 12px; }
   .blog .articulos {
-    width: 100%;
+    width: 90%;
     display: grid;
-    grid-template-columns: repeat 2, 1fr;
-    grid-template-rows: repeat 2, 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-content: center;
     align-content: center;
-    grid-template-areas: "articuloUno articuloDos" "articuloTres articuloCuatro"; }
-    .blog .articulos .imagenArticulo img {
-      object-fit: contain; }
-    .blog .articulos .articuloUno, .blog .articulos .articuloDos, .blog .articulos .articuloTres, .blog .articulos .articuloCuatro {
-      width: 80%;
+    padding: 20px;
+    gap: 15px; }
+    .blog .articulos .articulosSuperiores, .blog .articulos .articulosInferiores {
+      width: 90%;
+      height: 100%;
       background-color: #6c3156;
       margin-bottom: 20px;
       margin-top: 20px;
       padding: 10px;
-      justify-self: center;
-      grid-area: articuloUno; }
-      .blog .articulos .articuloUno img, .blog .articulos .articuloDos img, .blog .articulos .articuloTres img, .blog .articulos .articuloCuatro img {
+      justify-content: center; }
+      .blog .articulos .articulosSuperiores img, .blog .articulos .articulosInferiores img {
         padding: 20px;
         width: 95%;
-        height: 250px; }
-      .blog .articulos .articuloUno h3, .blog .articulos .articuloDos h3, .blog .articulos .articuloTres h3, .blog .articulos .articuloCuatro h3 {
+        height: 250px;
+        object-fit: cover; }
+      .blog .articulos .articulosSuperiores h3, .blog .articulos .articulosInferiores h3 {
         color: #07040b;
         font-size: 20px;
         margin: 10px;
-        text-align: left; }
-      .blog .articulos .articuloUno p, .blog .articulos .articuloDos p, .blog .articulos .articuloTres p, .blog .articulos .articuloCuatro p {
+        text-align: left;
+        height: 10%; }
+      .blog .articulos .articulosSuperiores p, .blog .articulos .articulosInferiores p {
+        font-size: 14px;
         margin: 15px;
         color: #f5b3ef94;
-        padding: 15px 0px; }
-      .blog .articulos .articuloUno button, .blog .articulos .articuloDos button, .blog .articulos .articuloTres button, .blog .articulos .articuloCuatro button {
+        padding: 15px 0px;
+        text-align: justify;
+        height: 25%; }
+      .blog .articulos .articulosSuperiores button, .blog .articulos .articulosInferiores button {
         width: 50%;
         background-color: #6c315688;
         box-shadow: 3px 3px 3px 3px #07040b88;
@@ -274,132 +276,139 @@ footer {
         font-family: "Platypi";
         font-size: 15px;
         color: #07040b; }
-        .blog .articulos .articuloUno button:hover, .blog .articulos .articuloDos button:hover, .blog .articulos .articuloTres button:hover, .blog .articulos .articuloCuatro button:hover {
+        .blog .articulos .articulosSuperiores button:hover, .blog .articulos .articulosInferiores button:hover {
           background-color: #442037; }
-    .blog .articulos .articuloDos {
-      grid-area: articuloDos; }
-      .blog .articulos .articuloDos img {
+    .blog .articulos .articulosInferiores {
+      background-color: #442037; }
+      .blog .articulos .articulosInferiores img {
         padding: 20px;
         width: 95%; }
-    .blog .articulos .articuloTres, .blog .articulos .articuloCuatro {
-      background-color: #442037;
-      grid-area: articuloTres; }
-      .blog .articulos .articuloTres img, .blog .articulos .articuloCuatro img {
-        padding: 20px;
-        Width: 95%; }
-      .blog .articulos .articuloTres button, .blog .articulos .articuloCuatro button {
+      .blog .articulos .articulosInferiores button {
         background-color: #442037; }
-        .blog .articulos .articuloTres button:hover, .blog .articulos .articuloCuatro button:hover {
+        .blog .articulos .articulosInferiores button:hover {
           background-color: #07040b88; }
-    .blog .articulos .articuloCuatro {
-      grid-area: articuloCuatro; }
-      .blog .articulos .articuloCuatro img {
-        padding: 20px;
-        width: 95%; }
-      .blog .articulos .articuloCuatro button {
-        margin: 5px; }
 
 /**cursos**/
-.detalleCursos {
+.cursos {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: none; }
-  .detalleCursos .automaquillaje, .detalleCursos .colorimetria {
-    width: 38%;
-    border: 2px solid #f5b3ef94;
-    border-radius: 5px;
-    margin: 30px; }
-    .detalleCursos .automaquillaje .contenido img, .detalleCursos .colorimetria .contenido img {
-      padding-left: 20px;
-      padding-top: 20px;
-      padding-right: 20px; }
-    .detalleCursos .automaquillaje .contenido h3, .detalleCursos .colorimetria .contenido h3 {
-      font-size: 24px;
-      text-align: center;
-      width: 55%;
-      color: #07040b;
-      background-color: #f5b3ef94;
-      margin-left: 190px;
-      border-radius: 5px;
-      border: 1px solid #07040b;
-      padding: 5px 10px; }
-    .detalleCursos .automaquillaje .contenido p, .detalleCursos .colorimetria .contenido p {
-      color: #f5b3ef94;
-      padding-left: 20px;
-      padding-bottom: 20px;
-      padding-top: 10px; }
-    .detalleCursos .automaquillaje .calificaciones, .detalleCursos .colorimetria .calificaciones {
-      margin-left: 20px;
-      padding-bottom: 10px; }
-      .detalleCursos .automaquillaje .calificaciones p, .detalleCursos .colorimetria .calificaciones p {
-        display: inline;
-        color: #36192f;
-        padding-left: 20px;
-        padding-bottom: 20px; }
-    .detalleCursos .automaquillaje button, .detalleCursos .automaquillaje .blog .articulos .articuloDos button, .blog .articulos .articuloDos .detalleCursos .automaquillaje button, .detalleCursos .colorimetria .blog .articulos .articuloDos button, .blog .articulos .articuloDos .detalleCursos .colorimetria button, .detalleCursos .automaquillaje .blog .articulos .articuloTres button, .blog .articulos .articuloTres .detalleCursos .automaquillaje button, .detalleCursos .colorimetria .blog .articulos .articuloTres button, .blog .articulos .articuloTres .detalleCursos .colorimetria button, .detalleCursos .automaquillaje .blog .articulos .articuloCuatro button, .blog .articulos .articuloCuatro .detalleCursos .automaquillaje button, .detalleCursos .colorimetria .blog .articulos .articuloCuatro button, .blog .articulos .articuloCuatro .detalleCursos .colorimetria button, .detalleCursos .automaquillaje .colorimetria button, .detalleCursos .colorimetria .automaquillaje button, .detalleCursos .colorimetria button {
-      width: 100%;
-      border: none;
-      border-radius: 0px 0px 5px 5px;
-      background-color: #f5b3ef94;
-      height: 40px; }
-      .detalleCursos .automaquillaje button a, .detalleCursos .automaquillaje .blog .articulos .articuloDos button a, .blog .articulos .articuloDos .detalleCursos .automaquillaje button a, .detalleCursos .automaquillaje .blog .articulos .articuloTres button a, .blog .articulos .articuloTres .detalleCursos .automaquillaje button a, .detalleCursos .automaquillaje .blog .articulos .articuloCuatro button a, .blog .articulos .articuloCuatro .detalleCursos .automaquillaje button a, .detalleCursos .colorimetria .blog .articulos .articuloDos button a, .blog .articulos .articuloDos .detalleCursos .colorimetria button a, .detalleCursos .colorimetria .blog .articulos .articuloTres button a, .blog .articulos .articuloTres .detalleCursos .colorimetria button a, .detalleCursos .colorimetria .blog .articulos .articuloCuatro button a, .blog .articulos .articuloCuatro .detalleCursos .colorimetria button a, .detalleCursos .colorimetria button a {
-        color: #07040b; }
-        .detalleCursos .automaquillaje button a:hover, .detalleCursos .colorimetria button a:hover {
-          color: #36192f; }
-  .detalleCursos .colorimetria .calificaciones {
-    margin-left: 20px;
-    padding-bottom: 10px; }
-
-.formularioCursos {
-  margin: 10px 10px 10px 110px;
-  background-color: #07040b;
-  width: 80%;
-  border: 2px solid #36192f;
+  gap: none;
   justify-content: center; }
-  .formularioCursos h3, .formularioCursos .blog .articulos .articuloDos h3, .blog .articulos .articuloDos .formularioCursos h3, .formularioCursos .blog .articulos .articuloTres h3, .blog .articulos .articuloTres .formularioCursos h3, .formularioCursos .blog .articulos .articuloCuatro h3, .blog .articulos .articuloCuatro .formularioCursos h3, .formularioCursos .detalleCursos .colorimetria .contenido h3, .detalleCursos .colorimetria .contenido .formularioCursos h3 {
-    font-size: 20px;
-    color: #c02995;
-    padding: 30px;
-    text-align: center; }
-  .formularioCursos .datos input {
-    width: 90%;
-    margin-left: 30px;
-    margin-right: 30px;
-    border: none;
-    border-bottom: 1px solid #c0299580;
-    background-color: #07040b; }
-  .formularioCursos .datos p, .formularioCursos .datos .blog .articulos .articuloDos p, .blog .articulos .articuloDos .formularioCursos .datos p, .formularioCursos .datos .blog .articulos .articuloTres p, .blog .articulos .articuloTres .formularioCursos .datos p, .formularioCursos .datos .blog .articulos .articuloCuatro p, .blog .articulos .articuloCuatro .formularioCursos .datos p, .formularioCursos .datos .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .contenido .formularioCursos .datos p, .formularioCursos .datos .detalleCursos .colorimetria .calificaciones p, .detalleCursos .colorimetria .calificaciones .formularioCursos .datos p {
-    color: #c0299580;
-    margin-left: 30px;
-    margin-top: 10px; }
-  .formularioCursos .mensaje input {
-    width: 90%;
-    height: 150px;
-    margin: 10px 30px;
-    border: 1px solid #c0299580;
-    background-color: #f5b3ef94;
-    border-radius: 10px; }
-  .formularioCursos .mensaje p, .formularioCursos .mensaje .blog .articulos .articuloDos p, .blog .articulos .articuloDos .formularioCursos .mensaje p, .formularioCursos .mensaje .blog .articulos .articuloTres p, .blog .articulos .articuloTres .formularioCursos .mensaje p, .formularioCursos .mensaje .blog .articulos .articuloCuatro p, .blog .articulos .articuloCuatro .formularioCursos .mensaje p, .formularioCursos .mensaje .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .contenido .formularioCursos .mensaje p, .formularioCursos .mensaje .detalleCursos .colorimetria .calificaciones p, .detalleCursos .colorimetria .calificaciones .formularioCursos .mensaje p {
-    color: #c0299580;
-    margin-left: 30px;
-    margin-top: 10px; }
-  .formularioCursos button, .formularioCursos .blog .articulos .articuloDos button, .blog .articulos .articuloDos .formularioCursos button, .formularioCursos .blog .articulos .articuloTres button, .blog .articulos .articuloTres .formularioCursos button, .formularioCursos .blog .articulos .articuloCuatro button, .blog .articulos .articuloCuatro .formularioCursos button, .formularioCursos .detalleCursos .colorimetria button, .detalleCursos .colorimetria .formularioCursos button {
-    width: 10%;
-    margin: 20px 30px;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0px 4px 4px #36192f;
-    padding: 5px 0px;
-    background-color: #c0299580; }
-    .formularioCursos button a, .formularioCursos .blog .articulos .articuloDos button a, .blog .articulos .articuloDos .formularioCursos button a, .formularioCursos .blog .articulos .articuloTres button a, .blog .articulos .articuloTres .formularioCursos button a, .formularioCursos .blog .articulos .articuloCuatro button a, .blog .articulos .articuloCuatro .formularioCursos button a, .formularioCursos .detalleCursos .colorimetria button a, .detalleCursos .colorimetria .formularioCursos button a {
-      color: #07040b; }
+  .cursos .detalleCursos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    width: 90%; }
+    .cursos .detalleCursos .infoCursos {
+      width: 38%;
+      border: 2px solid #f5b3ef94;
+      border-radius: 5px;
+      margin: 30px; }
+      .cursos .detalleCursos .infoCursos .contenido img {
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-right: 20px; }
+      .cursos .detalleCursos .infoCursos .contenido h3 {
+        font-size: 24px;
+        text-align: center;
+        width: 55%;
+        color: #07040b;
+        background-color: #f5b3ef94;
+        margin-left: 190px;
+        border-radius: 5px;
+        border: 1px solid #07040b;
+        padding: 5px 10px; }
+      .cursos .detalleCursos .infoCursos .contenido p {
+        color: #f5b3ef94;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 10px; }
+      .cursos .detalleCursos .infoCursos .calificaciones {
+        margin-left: 20px;
+        padding-bottom: 10px; }
+        .cursos .detalleCursos .infoCursos .calificaciones p {
+          display: inline;
+          color: #36192f;
+          padding-left: 20px;
+          padding-bottom: 20px; }
+      .cursos .detalleCursos .infoCursos button {
+        width: 100%;
+        border: none;
+        border-radius: 0px 0px 5px 5px;
+        background-color: #f5b3ef94;
+        height: 40px; }
+        .cursos .detalleCursos .infoCursos button a {
+          color: #07040b; }
+          .cursos .detalleCursos .infoCursos button a:hover {
+            color: #36192f; }
+  .cursos .formularioCursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    margin: 10px 10px 10px 110px;
+    background-color: #07040b;
+    width: 85%;
+    border: 2px solid #36192f;
+    justify-content: center; }
+    .cursos .formularioCursos h3, .cursos .formularioCursos .blog .articulos .articulosInferiores h3, .blog .articulos .articulosInferiores .cursos .formularioCursos h3 {
+      font-size: 20px;
+      color: #c02995;
+      padding: 30px;
+      text-align: center; }
+    .cursos .formularioCursos .datos {
+      width: 100%; }
+      .cursos .formularioCursos .datos input {
+        width: 90%;
+        margin-left: 30px;
+        margin-right: 30px;
+        border: none;
+        border-bottom: 1px solid #c0299580;
+        background-color: #07040b;
+        color: #f5b3ef94;
+        font-family: "Platypi"; }
+      .cursos .formularioCursos .datos p {
+        color: #c0299580;
+        margin-left: 30px;
+        margin-top: 10px; }
+    .cursos .formularioCursos .mensaje {
+      width: 100%; }
+      .cursos .formularioCursos .mensaje input {
+        width: 90%;
+        height: 150px;
+        margin: 10px 30px;
+        border: 1px solid #c0299580;
+        background-color: #f5b3ef94;
+        border-radius: 10px;
+        color: #07040b;
+        font-family: "Platypi"; }
+      .cursos .formularioCursos .mensaje p {
+        color: #c0299580;
+        margin-left: 30px;
+        margin-top: 10px; }
+    .cursos .formularioCursos button, .cursos .formularioCursos .blog .articulos .articulosInferiores button, .blog .articulos .articulosInferiores .cursos .formularioCursos button {
+      width: 10%;
+      margin: 20px 30px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0px 4px 4px #36192f;
+      padding: 5px 0px;
+      background-color: #c0299580; }
+      .cursos .formularioCursos button a, .cursos .formularioCursos .blog .articulos .articulosInferiores button a, .blog .articulos .articulosInferiores .cursos .formularioCursos button a {
+        color: #07040b; }
 
 /**galeria**/
 .contenedorGaleria {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: none;
+  justify-content: center;
+  align-content: center;
   grid-auto-rows: 300px;
   padding: 40px;
   gap: 20px; }
@@ -469,7 +478,7 @@ footer {
 /*1100px*/
 @media (max-width: 1100px) {
   /**estilos generales**/
-  p, .blog .articulos .articuloDos p, .blog .articulos .articuloTres p, .blog .articulos .articuloCuatro p, .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .calificaciones p {
+  p, .blog .articulos .articulosInferiores p {
     font-size: 12px; }
   .redesSociales h4 {
     font-size: 16px;
@@ -480,59 +489,86 @@ footer {
     width: 300px;
     bottom: 200px;
     left: 75px; }
-  .home .fondo p, .home .fondo .blog .articulos .articuloDos p, .blog .articulos .articuloDos .home .fondo p, .home .fondo .blog .articulos .articuloTres p, .blog .articulos .articuloTres .home .fondo p, .home .fondo .blog .articulos .articuloCuatro p, .blog .articulos .articuloCuatro .home .fondo p, .home .fondo .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .contenido .home .fondo p, .home .fondo .detalleCursos .colorimetria .calificaciones p, .detalleCursos .colorimetria .calificaciones .home .fondo p {
-    font-size: 18px;
+  .home .fondo p, .home .fondo .blog .articulos .articulosInferiores p, .blog .articulos .articulosInferiores .home .fondo p {
+    font-size: 16px;
     width: 300px;
     bottom: 200px;
     left: 75px; }
-  .home .presentacion img, .home .presentacion .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .home .presentacion img {
-    margin: 20px; }
-  .home .galeria img, .home .galeria .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .home .galeria img {
-    width: 28%; }
+  .home .presentacion {
+    justify-content: center; }
+    .home .presentacion .bio p {
+      font-size: 16px; }
+    .home .presentacion img {
+      margin: 20px; }
+  .home .galeria {
+    grid-template-rows: auto 250px; }
   /**quien soy**/
   .seccionUno .descripcion h2 {
     font-size: 26px; }
-  .seccionUno .trabajos img, .seccionUno .trabajos .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .seccionUno .trabajos img {
-    height: 200px; }
-  .seccionUno .trabajos h2 {
-    font-size: 26px; }
+  .seccionUno .trabajos {
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: auto repeat(3, 200px); }
+    .seccionUno .trabajos h2 {
+      font-size: 26px; }
   /**blog**/
   .blog .menu .busqueda input {
     height: 36px; }
-  .blog .menu .categorias {
-    padding: 15px; }
-    .blog .menu .categorias h2 {
+  .blog .articulos .articulosSuperiores, .blog .articulos .articulosInferiores {
+    width: 80%; }
+    .blog .articulos .articulosSuperiores img, .blog .articulos .articulosInferiores img {
+      height: 200px; }
+    .blog .articulos .articulosSuperiores h3, .blog .articulos .articulosInferiores h3 {
       font-size: 18px; }
-    .blog .menu .categorias ul li {
-      font-size: 10px; }
-  .blog .articulos .articuloUno img, .blog .articulos .articuloDos img, .blog .articulos .articuloTres img, .blog .articulos .articuloCuatro img {
-    height: 200px; }
-  .blog .articulos .articuloUno h3, .blog .articulos .articuloDos h3, .blog .articulos .articuloTres h3, .blog .articulos .articuloCuatro h3 {
-    font-size: 18px; }
-  .blog .articulos .articuloUno button, .blog .articulos .articuloDos button, .blog .articulos .articuloTres button, .blog .articulos .articuloCuatro button {
-    height: 35px;
-    font-size: 13px; }
+    .blog .articulos .articulosSuperiores p, .blog .articulos .articulosInferiores p {
+      font-size: 12px; }
+    .blog .articulos .articulosSuperiores button, .blog .articulos .articulosInferiores button {
+      height: 35px;
+      font-size: 13px; }
   /*galeria*/
   .contenedorGaleria {
     grid-auto-rows: 200px;
     padding: 30px;
     gap: 15px; } }
 
+/*960px*/
+@media (max-width: 960px) {
+  /*index*/
+  .home .presentacion .bio h2 {
+    font-size: 25px; }
+  .home .presentacion .bio p {
+    font-size: 14px; }
+  /*quien soy*/
+  .seccionUno {
+    gap: 30px;
+    align-items: top; }
+    .seccionUno .descripcion {
+      width: 45%; }
+    .seccionUno .trabajos {
+      margin: 15px;
+      width: 55%;
+      grid-template-columns: repeat(3, 160px);
+      grid-template-rows: auto repeat(3, 160px); }
+  /*blog*/
+  .blog .articulos .articulosSuperiores, .blog .articulos .articulosInferiores {
+    width: 100%;
+    gap: 30px; }
+    .blog .articulos .articulosSuperiores img, .blog .articulos .articulosInferiores img {
+      width: 100%;
+      padding: 10px; } }
+
 /**880px**/
 @media (max-width: 880px) {
   /**estilos generales**/
-  p, .blog .articulos .articuloDos p, .blog .articulos .articuloTres p, .blog .articulos .articuloCuatro p, .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .calificaciones p {
-    font-size: 10px; }
   nav .encabezado h1 {
     font-size: 25px; }
   nav .encabezado li {
     padding: 0; }
-    nav .encabezado li a, nav .encabezado li .detalleCursos .colorimetria button a, .detalleCursos .colorimetria button nav .encabezado li a {
+    nav .encabezado li a {
       font-size: 12px; }
   .redesSociales h4 {
     font-size: 14px;
     margin: 0px 15px; }
-  .redesSociales a, .redesSociales .detalleCursos .colorimetria button a, .detalleCursos .colorimetria button .redesSociales a {
+  .redesSociales a {
     margin: 0px 15px; }
   /**index**/
   .home .fondo h1 {
@@ -540,7 +576,7 @@ footer {
     width: 250px;
     bottom: 150px;
     left: 50px; }
-  .home .fondo p, .home .fondo .blog .articulos .articuloDos p, .blog .articulos .articuloDos .home .fondo p, .home .fondo .blog .articulos .articuloTres p, .blog .articulos .articuloTres .home .fondo p, .home .fondo .blog .articulos .articuloCuatro p, .blog .articulos .articuloCuatro .home .fondo p, .home .fondo .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .contenido .home .fondo p, .home .fondo .detalleCursos .colorimetria .calificaciones p, .detalleCursos .colorimetria .calificaciones .home .fondo p {
+  .home .fondo p, .home .fondo .blog .articulos .articulosInferiores p, .blog .articulos .articulosInferiores .home .fondo p {
     font-size: 14px;
     width: 250px;
     bottom: 150px;
@@ -550,29 +586,45 @@ footer {
     .home .presentacion .bio h2 {
       font-size: 20px; }
     .home .presentacion .bio p {
-      font-size: 10px; }
+      font-size: 12px; }
+  .home .galeria {
+    grid-template-rows: auto 200px;
+    border-top: 10px solid #07040b; }
+    .home .galeria h2 {
+      font-size: 35px; }
   /**quien soy**/
   .seccionUno .descripcion h2 {
     font-size: 22px; }
   .seccionUno .descripcion ul li {
     font-size: 12px; }
-  .seccionUno .trabajos h2 {
-    font-size: 22px; }
-  .seccionUno .trabajos img, .seccionUno .trabajos .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .seccionUno .trabajos img {
-    height: 150px; }
-  /**blog**/
-  .blog {
-    grid-template-columns: 1fr; }
-    .blog .menu .busqueda input {
-      height: 32px;
-      width: 550px; }
-    .blog .menu .categorias {
-      display: none; }
-    .blog .articulos .articuloUno h3, .blog .articulos .articuloDos h3, .blog .articulos .articuloTres h3, .blog .articulos .articuloCuatro h3 {
-      font-size: 16px; }
-    .blog .articulos .articuloUno button, .blog .articulos .articuloDos button, .blog .articulos .articuloTres button, .blog .articulos .articuloCuatro button {
-      height: 30px;
-      font-size: 11px; } }
+    .seccionUno .descripcion ul li a {
+      font-size: 12px; }
+  .seccionUno .trabajos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto repeat(3, 126px); }
+    .seccionUno .trabajos h2 {
+      font-size: 22px; } }
+
+/*770px*/
+@media (max-width: 770px) {
+  /*index*/
+  .home .presentacion .bio h2 {
+    font-size: 18px; }
+  .home .presentacion .bio p {
+    font-size: 11px; }
+  .home .galeria {
+    grid-template-rows: auto 180px; }
+  /*quien soy*/
+  .seccionUno .trabajos {
+    grid-template-rows: auto repeat(3, 105px); }
+  /*blog*/
+  .blog .articulos .articulosSuperiores h3, .blog .articulos .articulosInferiores h3 {
+    font-size: 16px; }
+  .blog .articulos .articulosSuperiores p, .blog .articulos .articulosInferiores p {
+    font-size: 11px; }
+  .blog .articulos .articulosSuperiores button, .blog .articulos .articulosInferiores button {
+    height: 40px;
+    font-size: 12px; } }
 
 /**600px**/
 @media (max-width: 600px) {
@@ -584,7 +636,7 @@ footer {
       display: none; }
     header nav .encabezado li {
       padding: 0; }
-      header nav .encabezado li a, header nav .encabezado li .detalleCursos .colorimetria button a, .detalleCursos .colorimetria button header nav .encabezado li a {
+      header nav .encabezado li a {
         font-size: 10px; }
   .redesSociales h4 {
     display: none; }
@@ -594,36 +646,29 @@ footer {
     width: 170px;
     bottom: 100px;
     left: 30px; }
-  .home .fondo p, .home .fondo .blog .articulos .articuloDos p, .blog .articulos .articuloDos .home .fondo p, .home .fondo .blog .articulos .articuloTres p, .blog .articulos .articuloTres .home .fondo p, .home .fondo .blog .articulos .articuloCuatro p, .blog .articulos .articuloCuatro .home .fondo p, .home .fondo .detalleCursos .colorimetria .contenido p, .detalleCursos .colorimetria .contenido .home .fondo p, .home .fondo .detalleCursos .colorimetria .calificaciones p, .detalleCursos .colorimetria .calificaciones .home .fondo p {
+  .home .fondo p, .home .fondo .blog .articulos .articulosInferiores p, .blog .articulos .articulosInferiores .home .fondo p {
     font-size: 12px;
     width: 170px;
     bottom: 100px;
     left: 30px; }
   .home .presentacion {
-    flex-direction: column; }
-    .home .presentacion img, .home .presentacion .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .home .presentacion img {
-      width: 40%; }
+    flex-direction: column;
+    align-items: center; }
+    .home .presentacion img {
+      display: none;
+      width: 50%; }
     .home .presentacion .bio {
       width: 90%;
       padding: 10px;
       margin-right: 20px;
       justify-content: center; }
-      .home .presentacion .bio h2 {
-        font-size: 16px; }
-      .home .presentacion .bio p {
-        font-size: 10px; }
   .home .galeria {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: none;
+    grid-template-columns: 300px;
+    grid-template-rows: auto repeat(3, 300px);
     padding: 30px; }
     .home .galeria h2 {
-      font-size: 28px; }
-    .home .galeria img, .home .galeria .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .home .galeria img {
-      width: 70%;
-      justify-self: center; }
+      font-size: 28px;
+      grid-column-start: span 1; }
   /**quien soy**/
   .seccionUno {
     display: flex;
@@ -632,9 +677,9 @@ footer {
     align-items: center;
     gap: none;
     width: 100%;
-    padding: 10px; }
+    padding: 25px 10px 10px 10px; }
     .seccionUno .descripcion {
-      width: 85%;
+      width: 75%;
       justify-content: center; }
       .seccionUno .descripcion h2 {
         font-size: 18px;
@@ -647,36 +692,52 @@ footer {
         .seccionUno .descripcion ul li {
           font-size: 10px;
           list-style: none; }
+          .seccionUno .descripcion ul li a {
+            font-size: 10px; }
     .seccionUno .trabajos {
-      width: 85%;
+      grid-template-rows: auto repeat(3, 120px);
+      width: 75%;
       justify-content: center;
       padding: 0;
       text-align: center; }
       .seccionUno .trabajos h2 {
         font-size: 18px;
         text-align: center; }
-      .seccionUno .trabajos img, .seccionUno .trabajos .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .seccionUno .trabajos img {
-        height: 140px; }
   /**blog**/
   .blog .menu .busqueda input {
-    height: 28px;
-    width: 400px; }
+    height: 26px;
+    width: 85%; }
   .blog .articulos {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat 4, 1fr;
+    grid-template-rows: repeat(4, 1fr);
     justify-content: center;
     align-content: center;
-    grid-template-areas: "articuloUno" "articuloDos" "articuloTres" "articuloCuatro";
-    width: 90%; } }
+    width: 85%; }
+    .blog .articulos .articulosSuperiores img, .blog .articulos .articulosInferiores img {
+      object-fit: cover; }
+    .blog .articulos .articulosSuperiores h3, .blog .articulos .articulosInferiores h3 {
+      height: 8%; }
+    .blog .articulos .articulosSuperiores p, .blog .articulos .articulosInferiores p {
+      height: 20%;
+      font-size: 12px; } }
 
 /*425px*/
 @media (max-width: 425px) {
+  /*index*/
+  .home .presentacion .bio h2 {
+    font-size: 16px; }
+  .home .presentacion .bio p {
+    font-size: 10px; }
   /**quien soy**/
-  .seccionUno .trabajos img, .seccionUno .trabajos .detalleCursos .colorimetria .contenido img, .detalleCursos .colorimetria .contenido .seccionUno .trabajos img {
-    height: 110px; }
+  .seccionUno .trabajos {
+    gap: 5px;
+    grid-template-rows: auto repeat(3, 100px); }
   /*blog*/
-  .blog .menu .busqueda input {
-    width: 300px; }
+  .blog .menu {
+    width: 90%; }
+    .blog .menu .busqueda .input {
+      height: 22px;
+      width: 90%; }
   .blog .articulos {
     width: 100%; } }

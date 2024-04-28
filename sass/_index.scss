@@ -24,18 +24,18 @@
         }
     }
     .presentacion{
-        @include flex (row, center, bottom, 40px);
+        @include flex (row, space-between, bottom, 40px);
         img{
             width: 30%;
-            margin-left: 15px;
+            margin-left: 35px;
             padding-bottom: 10px;
         }
         .bio{
             width: 50%;
             @include flex (column, center, center, none);
-            border: 3px solid map-get($colores, fondo);
+            box-shadow: 2px 3px 8px map-get($colores, fondo);
             padding: 10px;
-            margin-bottom: 10px;
+            margin: 10px 30px;
             h2{
                 padding: 5px 5px 15px 5px;
                 color:map-get($colores, titulos);
@@ -51,18 +51,25 @@
         }
     }
     .galeria{
+        @include grid (repeat(3,1fr), auto 340px, center, center);
         background-color: linear-gradient(to right, black, #07040b, #36192f, #511a38, #6c3156);
-        padding: 30px 50px 30px 100px;
+        padding: 10px 50px 10px 50px;
         width: 100%;
         border-top: 15px solid #07040b;
-        img{
-            width: 30%;
-            margin: 5px;
-        }
+        gap: 30px;
         h2{
             text-align: center;
             color: map-get($colores, letras);
+            padding: 15px;
             font-size: 40px;
+            grid-column-start: span 3;
+        }
+        .imagenGaleria{
+            overflow: hidden;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
         }
     }
 }

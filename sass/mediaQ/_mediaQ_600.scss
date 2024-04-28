@@ -37,31 +37,25 @@
         }    
         .presentacion{
             flex-direction: column;
+            align-items: center;
             img{
-                width: 40%;
+                display: none;
+                width: 50%;
             }
             .bio{
                 width: 90%;
                 padding: 10px;
-                   margin-right:20px;
+                margin-right:20px;
                 justify-content: center;
-                h2{
-                    font-size: 16px;
-                }
-                p{
-                    font-size: 10px;
-                }
             }
         }
         .galeria{
-            @include flex (column, center, center, none);
+            grid-template-columns: 300px;
+            grid-template-rows: auto repeat(3, 300px);
             padding: 30px;
             h2{
                 font-size: 28px;
-            }
-            img{
-                width: 70%;
-                justify-self: center;
+                grid-column-start: span 1;
             }
         }
     }
@@ -69,9 +63,9 @@
     .seccionUno{
         @include flex (column, center, center, none);
         width: 100%;
-        padding: 10px;
+        padding: 25px 10px 10px 10px;
         .descripcion{
-            width: 85%;
+            width: 75%;
             justify-content: center;
             h2{
                 font-size: 18px;
@@ -85,11 +79,15 @@
                 li{
                     font-size: 10px;
                     list-style: none;
+                    a{
+                        font-size: 10px;
+                    }
                 }
             }
         }
         .trabajos{
-            width: 85%;
+            grid-template-rows: auto repeat(3,120px);
+            width: 75%;
             justify-content: center;
             padding: 0;
             text-align: center;
@@ -97,37 +95,61 @@
                 font-size: 18px;
                 text-align: center;
             }
-            img{
-                height: 140px;
-            }
         }
     }
 /**blog**/
     .blog{
         .menu .busqueda input{
-            height: 28px;
-            width: 400px;
+           height: 26px;
+           width: 85%;
         }
         .articulos{
-            @include grid (1fr, repeat (4, 1fr), center, center, "articuloUno" "articuloDos" "articuloTres" "articuloCuatro");
-            width: 90%;
-        }
-    }    
+            @include grid (1fr, repeat(4, 1fr), center, center);
+            width: 85%;
+            .articulosSuperiores{
+                img{
+                    object-fit: cover;
+                }
+                h3{
+                    height: 8%;
+                }
+                p{
+                    height: 20%;
+                    font-size: 12px;
+                }
+            }
+        } 
+    }   
 }
 
 /*425px*/
 @media (max-width: 425px){
+/*index*/
+    .home .presentacion .bio{
+        h2{
+            font-size: 16px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
 /**quien soy**/
     .seccionUno{
-        .trabajos img{
-            height: 110px;
+        .trabajos{
+            gap: 5px;
+            grid-template-rows: auto repeat(3,100px);
+
         }
     }
 /*blog*/
     .blog{
-        .menu .busqueda input{
-            width: 300px;
+        .menu{
+            width: 90%;        
+            .busqueda .input{
+                height: 22px;
+                width: 90%;
             }
+        }
         .articulos{
             width: 100%;
        }
