@@ -757,7 +757,7 @@ footer {
     .blog .articulos .articulosSuperiores h3, .blog .articulos .articulosInferiores h3 {
       height: 8%; }
     .blog .articulos .articulosSuperiores p, .blog .articulos .articulosInferiores p {
-      height: 20%;
+      height: 15%;
       font-size: 12px; }
   /*cursos*/
   .cursos .detalleCursos .infoCursos .contenido h3 {
